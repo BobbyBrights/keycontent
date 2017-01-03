@@ -1,0 +1,20 @@
+$well-static-width: 925px;
+
+.well-title-btn, .group-title-btn{
+    @extend .v-middle;
+  > *{
+    display: inline-block;
+  }
+  margin-bottom: 20px;
+  .group-title{
+    margin: 0px;
+    padding-right: 20px;
+    vertical-align: middle;
+  }
+}
+
+.well-static{
+  @media (min-width: $screen-md-max){
+    max-width: $well-static-width;
+  }
+}

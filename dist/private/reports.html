@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css' href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="/dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section class="main-login main-dashboard">
+        <!-- mobile/tablet-nabvar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="toggle-mnu"><span></span></a>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Cross Finance" src="/dist/img/logo-sidebar.svg">
+                    </a>
+                    <!-- notify-mobile -->
+                    <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                    </div>
+                    <!-- /notify-mobile -->
+                </div>
+            </div>
+        </nav>
+        <!-- mobile/tablet-nabvar -->
+        <aside class="sidebar sidebar-dashboard">
+            <div class="sidebar-admin">
+                <div class="sidebar-logo visible-lg">
+                    <a href="/" title="Cross Finance">
+                        <img src="/dist/img/logo-sidebar.svg" alt="Cross Finance">
+                    </a>
+                </div>
+                <!-- notify-desctop -->
+                <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+                </div>
+                <!-- notify-desctop -->
+                <div class="sidebar-menu">
+                    <div class="user-profile">
+                        <div class="user-name">William Jefferson</div>
+                        <div class="user-status">
+                            <span class="icon icon-blue icon-warning"></span>
+                            <span class="status-tx">Not verified yet</span>
+                        </div>
+                        <div class="profile-logout">
+                            <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></div>
+                    </div>
+                    <nav class="nav-hover">
+                        <ul class="nav-list list-unstyled">
+                            <li class="nav-list-item">
+                                <a href="" class="nav-list-link">
+                                    <span class="icon icon-lg icon-refresh"></span><span class="link-tx">Payments and transfers</span></a>
+                            </li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-wallet"></span>
+                           <span class="link-tx"> Add funds</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-mastercard"></span> <span class="link-tx"> Cards & accounts</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-reports"></span> <span class="link-tx"> Reports </span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-tool"></span><span class="link-tx">Settings</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-paper"></span><span class="link-tx"> Fees</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link link-active"><span class="icon icon-lg icon-heart"></span><span class="link-tx"> Loyalty programm</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-info-question"></span><span class="link-tx"> Help & support</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar-summary-->
+            <div class="sidebar-summary">
+                <div class="collapse-list">
+                    <span class="collapse-title title-summary collapse in" role="button" data-toggle="collapse" href="#collapseSummary" aria-expanded="true" aria-controls="collapseExample">Summary <span class="icon icon-xs icon-arrow-down pull-right"></span></span>
+
+                    <div class="collapse in" id="collapseSummary" aria-expanded="true">
+                        <!--               wallet-block-->
+                        <div class="wallet">
+                            <div class="wallet-header">
+                                <span class="wallet-title">Cf-Wallet</span>
+                                <span class="walet-number pull-right">#000-150886</span>
+                            </div>
+                            <div class="wallet-body">
+                                <div class="wallet-list">
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">EUR</span>
+                                        <span class="pull-right">                         
+                                            <span class="wallet-summ">150 886,81</span>
+                                        <span class="icon icon-sm  icon-eur"></span>
+                                        </span>
+                                    </div>
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">USD</span>
+                                        <span class="pull-right">                         
+                                             <span class="wallet-summ">235 546,12</span>
+                                        <span class="icon icon-sm icon-usd"></span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--               /wallet-block-->
+                        <hr>
+                        <!--               limits-block-->
+                        <div class="limits">
+                            <div class="limits-header">
+                                <span class="limits-title">Limits</span>
+                            </div>
+                            <div class="limits-body">
+                                <div class="limits-admission">
+                                    <span class="admission-available text-success">1500,00</span><span class="admiss-all">/5 000,00</span></span>
+                                    <span class="icon icon-sm icon-eur pull-right"></span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span class="sr-only">40% Complete (success)</span>
+                                    </div>
+                                </div>
+                                <div class="limits-incoming">
+                                    <span>Incoming</span>
+                                    <span class="pull-right">for 365 days</span>
+                                </div>
+                            </div>
+                            <!--               /collapse-->
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-cprt">
+                    © Cross.finance LLC, 2016.
+                    <br> All Rights Reserved.
+                </div>
+            </div>
+            <!-- /sidebar-summary-->
+
+        </aside>
+        <main class="main-private">
+            <div class="promo-container hide">
+                <div class="promo">
+                    <div class="promo-item item-logo"><img src="/dist/img/logo-main.svg" alt=""></div>
+                    <div class="promo-item item-way">
+                        <div class="item-title">Cross Finance</div>
+                        <div class="item-subtitle">A simple way to money transfers</div>
+                    </div>
+                    <div class="promo-item item-sale">Only <strong>5%</strong> Free</div>
+                </div>
+
+            </div>
+
+            <div class="dashboard-container">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h1 class="top-title">Reports</h1>
+                            <div class="well">
+                                <div class="reports-main">
+                                    <h2 class="well-title text-uppercase">Consolidated statement for 7 days</h2>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="wallet border-right">
+                                                <div class="wallet-header header-size">
+                                                    <h3 class="sub-title fw-300"><span class="icon icon-arrow-circle-down text-success-dark"></span> Incoming <span class="badge badge-success-dark">23</span></h3>
+                                                </div>
+                                                <div class="wallet-body">
+                                                    <div class="wallet-list">
+                                                        <div class="wallet-list-item">
+                                                            <span class="wallet-currency">EUR</span>
+                                                            <span class="pull-right ">                         
+                                            <span class="wallet-summ text-success-dark">0,00</span>
+                                                            <span class="icon icon-sm icon-dark-blue  icon-eur"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="wallet-list-item">
+                                                            <span class="wallet-currency">USD</span>
+                                                            <span class="pull-right v-middle">                         
+                                             <span class="wallet-summ text-success-dark">0,00</span>
+                                                            <span class="icon icon-sm icon-dark-blue icon-usd"></span>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="wallet">
+                                                <div class="wallet-header header-size">
+                                                    <h3 class="sub-title fw-300"><span class="icon icon-arrow-circle-down text-danger rotate-90"></span> Outgoing <span class="badge badge-danger">23</span></h3>
+                                                </div>
+                                                <div class="wallet-body">
+                                                    <div class="wallet-list">
+                                                        <div class="wallet-list-item">
+                                                            <span class="wallet-currency">EUR</span>
+                                                            <span class="pull-right v-middle">                         
+                                            <span class="wallet-summ text-danger">0,00</span>
+                                                            <span class="icon icon-sm icon-dark-blue  icon-eur"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="wallet-list-item">
+                                                            <span class="wallet-currency">USD</span>
+                                                            <span class="pull-right v-middle">                         
+                                             <span class="wallet-summ text-danger">0,00</span>
+                                                            <span class="icon icon-sm icon-dark-blue icon-usd"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="well">
+                                <div class="reports">
+                                    <div class="table-panel">
+                                        <div class="table-filter">
+                                            <div class="form-row">
+                                                <!-- datepicker table-->
+                                                <div class='form-group col-md-2 col-sm-6 col-xs-12'>
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                        <input type='text' class="form-control form-dark-blue" />
+                                                        <span class="input-group-addon">
+                    <span class="icon icon-sm icon-yellow icon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <!-- /datepicker table-->
+                                                <div class="form-group col-md-2 col-sm-6 col-xs-12">
+                                                    <select class="selectpicker" data-style="btn-blue" data-width="100%">
+                                                        <option>Select product</option>
+                                                        <option>Default select</option>
+                                                        <option>Default select</option>
+                                                        <option>Default select</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                                    <div class="form-group">
+                                                        <div class="checkbox checkbox-info">
+                                                            <input id="checkboxIncoming" type="checkbox" checked="">
+                                                            <label for="checkboxIncoming">
+                                                                Incoming
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="checkbox checkbox-info">
+                                                            <input id="checkboxOutgoing" type="checkbox">
+                                                            <label for="checkboxOutgoing">
+                                                                Outgoing
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="checkbox checkbox-info">
+                                                            <input id="checkboxEUR" type="checkbox">
+                                                            <label for="checkboxEUR">
+                                                                EUR
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="checkbox checkbox-info">
+                                                            <input id="checkboxUSD" type="checkbox">
+                                                            <label for="checkboxUSD">
+                                                                USD
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <hr class="dark-blue">
+                                    <table class="table table-reports table-striped" data-tablesaw-sortable>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="persist">Type</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Date</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Product</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1"><abbr title="Rotten Tomato Rating">Amount</abbr></th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Fee</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="5">Total</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="6">Name</th>
+                                                <th class="visible-lg" scope="col" data-tablesaw-sortable-col data-tablesaw-priority="7">Comment</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="8">Status</th>
+                                                <!--                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">Rank</th>-->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tbl-type">
+                                                    <span class="tablesaw-cell-label hidden">Incoming</span>
+                                                    <span class="icon icon-sm icon-arrow-circle-down text-success-dark"></span></td>
+                                                <td class="tbl-date">Jan 1, 2015, 8:15 p.m.</td>
+                                                <td class="tbl-product">CF-wallet #000-150856</td>
+                                                <td class="tbl-amount">$120,00</td>
+                                                <td class="tbl-fee">$2,50</td>
+                                                <td class="tbl-total">$117,50</td>
+                                                <td class="tbl-name">Jacqueline Jennings</td>
+                                                <td class="tbl-comment visible-lg">Foods</td>
+                                                <td class="tbl-status">
+                                                    <span class="tablesaw-cell-label hidden">status-success</span>
+                                                    <span class="icon icon-sm icon-check-mark-rounded text-success-dark"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-type">
+                                                    <span class="tablesaw-cell-label hidden">Incoming</span>
+                                                    <span class="icon icon-sm icon-arrow-circle-down text-success-dark"></span></td>
+                                                <td class="tbl-date">Feb 12, 2011, 18:00 p.m.</td>
+                                                <td class="tbl-product">CF-wallet #000-150886</td>
+                                                <td class="tbl-amount">$120,00</td>
+                                                <td class="tbl-fee">$32,50</td>
+                                                <td class="tbl-total">$117,50</td>
+                                                <td class="tbl-name">Jacqueline Jennings</td>
+                                                <td class="tbl-comment visible-lg">Goods</td>
+                                                <td class="tbl-status">
+                                                    <span class="tablesaw-cell-label hidden">status-cancel</span>
+                                                    <span class="icon icon-sm icon-cancel text-danger"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-type">
+                                                    <span class="tablesaw-cell-label hidden">Incoming</span>
+                                                    <span class="icon icon-sm icon-arrow-circle-down text-success-dark"></span></td>
+                                                <td class="tbl-date">Jan 1, 2014, 7:15 p.m.</td>
+                                                <td class="tbl-product">CF-wallet #000-150126</td>
+                                                <td class="tbl-amount">$123,00</td>
+                                                <td class="tbl-fee">$12,50</td>
+                                                <td class="tbl-total">$247,50</td>
+                                                <td class="tbl-name">Qwacqueline Jennings</td>
+                                                <td class="tbl-comment visible-lg">Fuiel</td>
+                                                <td class="tbl-status">
+                                                    <span class="tablesaw-cell-label hidden">status-waiting</span>
+                                                    <span class="icon icon-sm icon-on-moderation text-warning"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-type">
+                                                    <span class="tablesaw-cell-label hidden">Outgoing</span>
+                                                    <span class="icon icon-sm icon-arrow-circle-down text-danger rotate-90"></span></td>
+                                                <td class="tbl-date">Jan 1, 2015, 8:15 p.m.</td>
+                                                <td class="tbl-product">CF-wallet #000-150856</td>
+                                                <td class="tbl-amount">$120,00</td>
+                                                <td class="tbl-fee">$2,50</td>
+                                                <td class="tbl-total">$117,50</td>
+                                                <td class="tbl-name">Jacqueline Jennings</td>
+                                                <td class="tbl-comment visible-lg">Payment for something important</td>
+                                                <td class="tbl-status">
+                                                    <span class="tablesaw-cell-label hidden">status-success</span>
+                                                    <span class="icon icon-sm icon-check-mark-rounded text-success-dark"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-type">
+                                                    <span class="tablesaw-cell-label hidden">Outgoing</span>
+                                                    <span class="icon icon-sm icon-arrow-circle-down text-danger rotate-90"></span></td>
+                                                <td class="tbl-date">Feb 12, 2011, 18:00 p.m.</td>
+                                                <td class="tbl-product">CF-wallet #000-150886</td>
+                                                <td class="tbl-amount">$120,00</td>
+                                                <td class="tbl-fee">$32,50</td>
+                                                <td class="tbl-total">$117,50</td>
+                                                <td class="tbl-name">Jacqueline Jennings</td>
+                                                <td class="tbl-comment visible-lg">Fuiel</td>
+                                                <td class="tbl-status">
+                                                    <span class="tablesaw-cell-label hidden">status-cancel</span>
+                                                    <span class="icon icon-sm icon-cancel text-danger"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-type">
+                                                    <span class="tablesaw-cell-label hidden">Outgoing</span>
+                                                    <span class="icon icon-sm icon-arrow-circle-down text-danger rotate-90"></span></td>
+                                                <td class="tbl-date">Jan 1, 2014, 7:15 p.m.</td>
+                                                <td class="tbl-product">CF-wallet #000-150126</td>
+                                                <td class="tbl-amount">$123,00</td>
+                                                <td class="tbl-fee">$12,50</td>
+                                                <td class="tbl-total">$247,50</td>
+                                                <td class="tbl-name">Qwacqueline Jennings</td>
+                                                <td class="tbl-comment visible-lg">Closes</td>
+                                                <td class="tbl-status">
+                                                    <span class="tablesaw-cell-label hidden">status-waiting</span>
+                                                    <span class="icon icon-sm icon-on-moderation text-warning"></span></td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-templates summary-fixed hide">
+                <div class="create-template">
+                    <div class="template-empty">
+                        <h2 class="text-uppercase">Templates</h2>
+                        <div class="template-emty-body">
+                            <div class="template-emty-header tbl">
+                                <span class="icon icon-xl icon-info-notification icon-dark-blue tbl-cell"></span>
+                                <h2 class="template-emty-title tbl-cell">You did not create any template</h2>
+                            </div>
+                            <div class="template-emty-text text-darken">Creating a template is possible only after processing the first payment.</div>
+                        </div>
+                    </div>
+                    <div class="template-news">
+                        <div class="news-item">
+                            <h2 class="news-title text-uppercase">News</h2>
+                            <div class="news-label label label-lg label-warning">Attention!</div>
+                            <h2 class="news-sub-title">Service Information for the Festive Period</h2>
+                            <div class="news-date">21 December, 2015</div>
+                            <div class="news-body text-darken">
+                                Dear customers! The Cross Finance team wishes you all a Merry Christmas and a Happy New Year! We hope that the new year brings fresh ideas, and with them success and luck in all beginnings. Please be aware of our working hours during the Christmas period: 25.12.2015, 31.12.2015-03.01.2016 – bank holidays. Crediting and sending of bank transfers will not be carried out. 24.12.2015, 30.12.2015 – reduced bank working days. Payment orders will be taken until 13.00 GMT.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>

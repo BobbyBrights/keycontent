@@ -1,0 +1,152 @@
+@import 'variables';
+@import 'bootstrap-variables';
+@import 'icon-animate';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'sidebar';
+@import 'dashboard';
+@import 'nav';
+@import 'btn';
+@import 'form-dark';
+@import 'checkbox';
+@import 'label';
+@import 'fonts-icon';
+
+
+
+
+html,
+body {
+    height: $global-height;
+    min-height: $global-height;
+}
+
+
+
+
+//type
+.fw-300{
+    font-weight: 300;
+}
+/*main - template*/
+
+.dashboard-container {
+    display: table;
+    width: 100%;
+    @media (min-width: 1440px) {
+        min-height: $global-height;
+        float: left;
+    }
+    @media (min-width: $screen-sm-max) {
+        padding: 0 15px;
+    }
+    @media (max-width: $screen-xs-min) and (orientation: portrait) {
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+.summary-templates {
+    @media (max-width: 1440px) {
+        //float: left;
+        margin: 0 30px;
+        padding-top: 0;
+        border-radius: 10px;
+    }
+    @media (min-width: 1440px) {
+        min-height: $global-height;
+        max-width: 340px;
+    }
+    @media (max-width: $screen-sm-max) and (orientation: portrait) {
+        margin: 0 15px;
+    }
+    & .template-emty-header,
+    .template-emty-text {
+        @media (max-width: 1339px) {
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        & .icon {
+            padding-right: 15px;
+        }
+        @media (max-width: 1339px) {
+            & .icon {
+                padding: 0 0 15px;
+                display: table-caption;
+            }
+        }
+    }
+    
+    /*@media (max-width: $screen-xs-min) and (orientation: portrait) {
+        width: 100%;
+        max-width: 100%;
+        float: left;
+    }*/
+    
+    &.summary-bg {
+        background-color: #364d5f;
+        padding-left: 30px;
+        padding-right: 30px;
+        @media (max-width: 1440px) {
+            margin: 0;
+            border-radius: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            float: left;
+        }
+        @media (max-width: $screen-sm-max) {
+            padding: 5px 15px 10px;
+        }
+        & .summary-body {
+            margin: 0 -15px;
+            float: left;
+            width: 100%;
+            hr{
+                margin: 15px;
+            }
+            & .body-item {
+                &.item-cost h2{
+                    margin-top: 10px;
+                }
+                margin-bottom: 10px;
+                float: left;
+                width: 100%;
+                &.item-total {
+                    & .body-item-list {
+                        font-size: 30px;
+                        margin-bottom: 30px;
+                    }
+                }
+                & .body-item-list {
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    &.summary-fixed {
+        @media (min-width: 1440px) {
+            position: fixed;
+            right: 0;
+            padding-top: 70px;
+        }
+    }
+    .news-item {
+        padding-bottom: 15px;
+        @media (min-width: 1440px) {
+            padding-top: 80px;
+        }
+        .news-sub-title {
+            color: #e1eef9;
+            font-weight: 300;
+        }
+    }
+}
+
+a {
+    background-color: transparent;
+    font-weight: 300;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+

@@ -1,0 +1,74 @@
+$toggle-height: 3px;
+$toggle-line-radius: 4px;
+$toggle-line-color: #1b5c81;
+
+/*-- toogle-menu animate--*/
+
+.toggle-mnu {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 1070;
+    span {
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+        }
+        &:after {
+            top: 18px;
+            width: 100%;
+            height: $toggle-height;
+            background-color: $toggle-line-color;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-border-radius: $toggle-line-radius;
+            border-radius: $toggle-line-radius;
+        }
+        position: relative;
+        display: block;
+        width: 100%;
+        height: $toggle-height;
+        background-color: $toggle-line-color;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-border-radius: toggle-line-radius;
+        border-radius: toggle-line-radius;
+        &:before {
+            width: 100%;
+            height: $toggle-height;
+            background-color: $toggle-line-color;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-border-radius: $toggle-line-radius;
+            border-radius: $toggle-line-radius;
+        }
+    }
+    &.on span {
+        background-color: transparent;
+        &:before {
+            transform: rotate(45deg) translate(-1px, 0px);
+            -ms-transform: rotate(45deg) translate(-1px, 0px);
+            -webkit-transform: rotate(45deg) translate(-1px, 0px);
+        }
+        &:after {
+            transform: rotate(-45deg) translate(6px, -7px);
+            -ms-transform: rotate(-45deg) translate(6px, -7px);
+            -webkit-transform: rotate(-45deg) translate(6px, -7px);
+        }
+    }
+}
+
+
+/*-- /toogle-menu animate--*/

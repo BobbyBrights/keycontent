@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="../../../dist/css/main.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="../../../dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css'
+          href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../../../dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="../../../dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section class="main-login main-dashboard">
+    <!-- mobile/tablet-nabvar -->
+    <nav class="navbar navbar-default navbar-fixed-top hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="toggle-mnu"><span></span></a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Keycontent" src="../../img/logo-navbar-mobile.png">
+                </a>
+                <!-- notify-mobile -->
+                <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                </div>
+                <!-- /notify-mobile -->
+            </div>
+        </div>
+    </nav>
+    <!-- mobile/tablet-nabvar -->
+    <aside class="sidebar sidebar-dashboard">
+        <div class="sidebar-admin">
+            <div class="sidebar-logo visible-lg">
+                <a href="/" title="More than writers">
+                    <img src="../../img/logo-admin.png" alt="More than writers">
+                </a>
+            </div>
+            <!-- notify-desctop -->
+            <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+            </div>
+            <!-- notify-desctop -->
+            <div class="sidebar-menu">
+                <div class="user-profile v-middle">
+                    <span class="user-name">Administrator</span>
+                    <span class="profile-logout">
+                        <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></span>
+                </div>
+                <nav class="nav-hover">
+                    <ul class="nav-list list-unstyled">
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link"><span
+                                    class="icon icon-lg icon-tool"></span><span class="link-tx">Tests management</span></a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link"><span
+                                    class="icon icon-lg icon-category"></span><span
+                                    class="link-tx">Tests categoories</span></a>
+                        </li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link link-active"><span
+                                class="icon icon-lg icon-edit"></span><span class="link-tx"> Editors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-feather"></span> <span class="link-tx"> Authors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-paper"></span> <span class="link-tx"> Content</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-cprt">
+                © Cross.finance LLC, 2016.
+                <br> All Rights Reserved.
+            </div>
+        </div>
+    </aside>
+    <main class="main-private">
+        <div class="dashboard-container">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="top-title">New editor</h1>
+                <h3 class="sub-title fw-300">Richard Born</h3>
+
+                <div class="panel-editors">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="editors-item">
+                            <p class="text-darken">Editor’s ID:</p>
+                            <h3 class="sub-title fw-300">45688</h3>
+                        </li>
+                        <li class="account-item">
+                            <p class="text-darken">Account status:</p>
+                            <ul class="account-item-list list-unstyled list-inline">
+                                <li><h3 class="sub-title text-success-dark fw-300">Active</h3></li>
+                                <li class="pull-right">
+                                    <button data-toggle="modal" data-target="#deactivateEditors"
+                                            class="btn btn-xs btn-info">Deactivate
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="lang-item">
+                            <p class="text-darken">Language:</p>
+                            <h3 class="sub-title fw-300">English</h3>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- nav tabs -->
+                <ul class="nav nav-pills nav-editor" role="tablist">
+                    <li role="presentation" class="active"><a class="btn-tabs v-middle" href="#editors-contact"
+                                                              aria-controls="home" role="tab" data-toggle="tab"><span class="icon icon-lg icon-phone-email visible-xs"></span><span class="hidden-xs"> Contact
+                        data</span></a></li>
+                    <li role="presentation"><a class="btn-tabs v-middle" href="#editors-statistic"
+                                               aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-lg icon-reports visible-xs"></span><span class="hidden-xs"> Statistics</span></a></li>
+                    <li role="presentation"><a class="btn-tabs v-middle" href="#editors-login" aria-controls="profile"
+                                               role="tab" data-toggle="tab"><span class="icon icon-lg icon-login-data visible-xs"></span><span class="hidden-xs">Login in data</span></a></li>
+                </ul>
+                <!-- nav tabs -->
+
+                <!-- .tab-content -->
+                <div class="tab-content">
+                    <!-- Tab panes -->
+                    <div role="tabpanel" class="tab-pane fade in active" id="editors-contact">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <fieldset>
+                                    <form>
+                                        <div class="form-group-box form-static">
+                                            <h2 class="sub-title text-uppercase">Contact data</h2>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label class="text-darken">Phone Number:</label>
+                                                        <input type="text" class="form-control form-dark-blue"
+                                                               placeholder="+44 20 8347 8111">
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label class="text-darken">Skype:</label>
+                                                        <input type="text" class="form-control form-dark-blue"
+                                                               placeholder="Enter skype">
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="col-md-3 col-xs-12">
+                                                    <div class="form-group form-add">
+                                                        <label class="text-darken">Language:</label>
+                                                        <select class="selectpicker select-add" data-style="btn-blue"
+                                                                data-width="100%">
+                                                            <option>English</option>
+                                                            <option>Spanish</option>
+                                                            <option>Serbian</option>
+                                                        </select>
+                                                        <button type="submit"
+                                                                class="btn-link btn-add icon icon-sm icon-plus"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div role="tabpanel" class="tab-pane fade" id="editors-statistic">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="well well-static"> <!--well-->
+                                        <h2 class="well-title text-uppercase">Statistics</h2>
+                                    <div class="statistics-box">
+                                        <div class="row statistics-box-row">
+                                            <div class="statistics-box-item">
+                                                <div class="statistics-box-body passed-stat">
+                                                    <div class="statistics-box-title text-success-dark">18/25</div>
+                                                    <div class="statistics-box-subtitle">Passed test requests</div>
+                                                </div>
+                                            </div>
+                                            <div class="statistics-box-item border border-left border-right">
+                                                    <div class="statistics-box-body failed-stat">
+                                                        <div class="statistics-box-title text-danger">18/25</div>
+                                                        <div class="statistics-box-subtitle">Failed test requests</div>
+                                                    </div>
+                                            </div>
+                                            <div class="statistics-box-item">
+                                                    <div class="statistics-box-body average-stat">
+                                                        <div class="statistics-box-title">18/25</div>
+                                                        <div class="statistics-box-subtitle">Average editor’s mark</div>
+                                                    </div>
+                                            </div>
+
+
+                                        </div>      <!--/well-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="editors-login">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <h2 class="sub-title text-uppercase">Log in data</h2>
+                                <ul class="login-data-list list-unstyled">
+                                    <li class="login-data-list-item"><span>Current email: </span><span class="text-light">richardborn@gmail.com</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.tab-content -->
+
+        </div>
+
+        <div class="modal fade" id="deactivateEditors" tabindex="-1" role="dialog" aria-labelledby="deactivateEditors">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"></div>
+                    <div class="modal-body">
+                        <div class="confirm-box text-center">
+                            <span class="icon icon-xxl icon-red icon-warning"></span>
+                            <h2 class="confirm-ttl">confirm deactivation</h2>
+                            <p class="confirm-sb-ttl text-light">You are trying to deactivate editor’s <span
+                                    class="text-light-blue">(Richard Born)</span> account.</p>
+                            <p class="text-light">Are you sure?</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group-center">
+                            <button type="button" class="btn btn-135 btn-outline" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-135 btn-warning">Deactivate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</section>
+</body>
+</html>

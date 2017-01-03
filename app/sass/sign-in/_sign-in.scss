@@ -1,0 +1,88 @@
+
+
+$sign-in-bg-img: url("../img/signin-bg.jpg");
+$sign-in-bg: $sidebar-bg !default;
+$sign-in-color: #1b5c81 !default;
+$sign-in-link: 16px !default;
+$sign-in-form-title-color: #e1eef9 !default;
+$sign-in-form-title-size:  30px !default;
+$sign-in-form-subtitle-size:  24px !default;
+//custom form width
+$sign-in-form-width:  280px !default;
+
+
+
+.admin-login{
+  background: $sign-in-bg $sign-in-bg-img;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: $sign-in-color;
+  min-height: 100%;
+  &.vh-100{
+    @media (min-width: 320px){
+      height: 100%;
+    }
+  }
+
+ // @extend .main-login;
+}
+.admin-logo{
+  padding: 30px;
+  @media (min-width: $screen-xs-max){
+    position: fixed;
+  }
+}
+
+.login-title{
+  color: $sign-in-form-title-color;
+  font-size: $sign-in-form-title-size;
+}
+.title-blue{
+  color: $sign-in-color;
+}
+
+.form-center{
+  max-width: $sign-in-form-width;
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.login-sub-title{
+  margin-bottom: 30px;
+  line-height: 1.2;
+  @extend .fw-300;
+  @extend .text-center;
+  font-size: $sign-in-form-subtitle-size;
+  color: $sign-in-color;
+}
+.login-info-title{
+  color: $sign-in-color;
+  @extend .text-center;
+}
+.sign-link{
+  font-size: $sign-in-link;
+}
+.btn + .sign-link{
+  margin-top: 15px;
+  float: left;
+}
+
+//multistep form
+.check-list-box {
+  display: table;
+  margin: 15px auto 30px;
+}
+.sign-title{
+  color: $sign-in-color;
+  font-weight: 600;
+  @extend .text-center;
+}
+.box-center{
+  @extend .btn-group-center;
+  .info-block{
+    padding-bottom: 0;
+  }
+}

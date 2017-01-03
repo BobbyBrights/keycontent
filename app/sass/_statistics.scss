@@ -1,0 +1,60 @@
+$statistic-box-title-font-size: 2.571em;
+$statistic-box-subtitle-font-size: 1.286em;
+$statistic-box-item-width: 33%;
+$statistic-box-item-border-height: 100%;
+$statistic-box-padding: 2em;
+
+$login-data-list-font-size: 1.286em;
+$data-list-padding: 15px;
+
+.statistics-box {
+  &-row + &-row {
+    margin-top: $statistic-box-padding;
+  }
+  &-row {
+    @media (min-width: $screen-sm-max) {
+      margin-bottom: $statistic-box-padding;
+    }
+  }
+  &-item {
+    display: inline-block;
+    width: $statistic-box-item-width;
+    vertical-align: middle;
+    position: relative;
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+  }
+  &-title,
+  &-subtitle {
+    @extend .text-center;
+    @extend .fw-300;
+  }
+  &-title {
+    font-size: $statistic-box-title-font-size;
+  }
+  &-subtitle {
+    font-size: $statistic-box-subtitle-font-size;
+    @extend .text-light;
+  }
+  &-body {
+    //@media (max-width: $screen-sm-max){
+    padding: $statistic-box-padding 0;
+    //}
+  }
+}
+
+.login-data-list, .data-list {
+  margin-bottom: $data-list-padding;
+  &-item {
+    font-size: $login-data-list-font-size;
+    @extend .fw-300;
+  }
+  &-title {
+    padding-bottom: $data-list-padding;
+    @extend .text-light;
+  }
+  &-item + &-item {
+    margin-top: $login-data-list-font-size / 3;
+  }
+}

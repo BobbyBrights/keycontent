@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="../../../dist/css/main.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="../../../dist/css/tablesaw.css">
+    <link rel="stylesheet" href="../../../dist/css/flags.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css'
+          href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../../../dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="../../../dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section class="main-login main-dashboard">
+    <!-- mobile/tablet-nabvar -->
+    <nav class="navbar navbar-default navbar-fixed-top hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="toggle-mnu"><span></span></a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Keycontent" src="../../img/logo-navbar-mobile.png">
+                </a>
+                <!-- notify-mobile -->
+                <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                </div>
+                <!-- /notify-mobile -->
+            </div>
+        </div>
+    </nav>
+    <!-- mobile/tablet-nabvar -->
+    <aside class="sidebar sidebar-dashboard">
+        <div class="sidebar-admin">
+            <div class="sidebar-logo visible-lg">
+                <a href="/" title="More than writers">
+                    <img src="../../img/logo-admin.png" alt="More than writers">
+                </a>
+            </div>
+            <!-- notify-desctop -->
+            <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+            </div>
+            <!-- notify-desctop -->
+            <div class="sidebar-menu">
+                <div class="user-profile v-middle">
+                    <span class="user-name">Administrator</span>
+                    <span class="profile-logout">
+                        <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></span>
+                </div>
+                <nav class="nav-hover">
+                    <ul class="nav-list list-unstyled">
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link"><span
+                                    class="icon icon-lg icon-tool"></span><span class="link-tx">Tests management</span></a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link"><span
+                                    class="icon icon-lg icon-category"></span><span
+                                    class="link-tx">Tests categoories</span></a>
+                        </li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link link-active"><span
+                                class="icon icon-lg icon-edit"></span><span class="link-tx"> Editors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-feather"></span> <span class="link-tx"> Authors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-paper"></span> <span class="link-tx"> Content</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-cprt">
+                © Cross.finance LLC, 2016.
+                <br> All Rights Reserved.
+            </div>
+        </div>
+    </aside>
+    <main class="main-private">
+        <div class="dashboard-container">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="top-title">Test Requests</h1>
+                <div class="well">
+                    <h2 class="well-title text-uppercase">Test Requests</h2>
+
+                    <!--.template-empty-list-->
+                    <div class="row hide">
+                        <div class="template-empty text-center">
+                            <div class="template-emty-body">
+                                <div class="template-emty-header">
+                                    <span class="icon icon-xl icon-info-notification icon-dark-blue"></span>
+                                    <span class="template-emty-title center-block text-center">Editors list empty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--.template-empty-list-->
+
+                    <!--.editors-list-table-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="reports">
+                                <div class="tab-switcher">
+                                    <div class="btn-radio-group btn-group" data-toggle="buttons">
+                                        <label class="btn btn-blue btn-radio active" data-toggle="tab" data-target="#tab-1">
+                                            <input type="radio" name="optionIncoming" id="optionIncoming" autocomplete="off"> Incoming <span class="incoming-count">(16)</span>
+                                        </label>
+                                        <label class="btn btn-blue btn-radio" data-toggle="tab" data-target="#tab-2">
+                                            <input type="radio" name="optionCompleted" id="optionCompleted" autocomplete="off"> Completed <span class="completed-count">(12)</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in tab-incoming active" id="tab-1">
+                                        <table class="table table-reports table-striped" data-tablesaw-sortable>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Test ID
+                                                </th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Topic</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Language
+                                                </th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Incoming
+                                                    date
+                                                </th>
+                                                <th class="text-right" scope="col" data-tablesaw-priority="5"><span class="hidden">Exam</span></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="tbl-id"><span class="text-darken-blue">45688</span></td>
+                                                <td class="tbl-name"><a class="table-link"
+                                                                        href="editor_test-completed-request-details.html">8
+                                                    Things Business Users Should Know About the New iPhone 7</a></td>
+                                                <td class="tbl-lang"><span class="flag-sm flag-sm-US"></span></td>
+                                                <td class="tbl-date"><span class="text-darken-blue">02:00 pm, 22.10.2016</span></td>
+                                                <td class="tbl-completed">
+                                                    <button onclick="location.href='editor_test-completed-request-details.html'" type="submit" class="btn btn-xs btn-info pull-right">Exam</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-id"><span class="text-darken-blue">45688</span></td>
+                                                <td class="tbl-name"><a class="table-link"
+                                                                        href="editor_test-completed-request-details.html">10 Countries With The Best Business Schools For Entrepreneurs</a></td>
+                                                <td class="tbl-lang"><span class="flag-sm flag-sm-DE"></span></td>
+                                                <td class="tbl-date"><span class="text-darken-blue">02:00 pm, 22.10.2016</span></td>
+                                                <td class="tbl-completed">
+                                                    <button onclick="location.href='editor_test-completed-request-details.html'" type="submit" class="btn btn-xs btn-info pull-right">Exam</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-id"><span class="text-darken-blue">45688</span></td>
+                                                <td class="tbl-name"><a class="table-link"
+                                                                        href="editor_test-completed-request-details.html">10 Countries With The Best Business Schools For Entrepreneurs</a></td>
+                                                <td class="tbl-lang"><span class="flag-sm flag-sm-UA"></span></td>
+                                                <td class="tbl-date"><span class="text-darken-blue">02:00 pm, 22.10.2016</span></td>
+                                                <td class="tbl-completed">
+                                                    <button onclick="location.href='editor_test-completed-request-details.html'" type="submit" class="btn btn-xs btn-info pull-right">Exam</button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab-2">
+                                        <table class="table table-reports  tab-completed table-striped" data-tablesaw-sortable>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Test ID
+                                                </th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Topic</th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="1">Language
+                                                </th>
+                                                <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4">Completed
+                                                    date
+                                                </th>
+                                                <th class="text-right" scope="col" data-tablesaw-priority="5"><span class="hidden">Exam</span></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="tbl-id"><span class="text-darken-blue">45688</span></td>
+                                                <td class="tbl-name"><a class="table-link"
+                                                                        href="editor_test-completed-request-details.html">8
+                                                    Things Business Users Should Know About the New iPhone 7</a></td>
+                                                <td class="tbl-lang"><span class="flag-sm flag-sm-US"></span></td>
+                                                <td class="tbl-date"><span class="text-darken">02:00 pm, 22.10.2016</span></td>
+                                                <td class="tbl-completed">
+                                                    <button type="submit" class="btn btn-xs btn-info pull-right">Exam</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-id"><span class="text-darken-blue">45688</span></td>
+                                                <td class="tbl-name"><a class="table-link"
+                                                                        href="editor_test-completed-request-details.html">10 Countries With The Best Business Schools For Entrepreneurs</a></td>
+                                                <td class="tbl-lang"><span class="flag-sm flag-sm-DE"></span></td>
+                                                <td class="tbl-date"><span class="text-darken">02:00 pm, 22.10.2016</span></td>
+                                                <td class="tbl-completed">
+                                                    <button type="submit" class="btn btn-xs btn-info pull-right">Exam</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tbl-id"><span class="text-darken-blue">45688</span></td>
+                                                <td class="tbl-name"><a class="table-link"
+                                                                        href="editor_test-completed-request-details.html">10 Countries With The Best Business Schools For Entrepreneurs</a></td>
+                                                <td class="tbl-lang"><span class="flag-sm flag-sm-UA"></span></td>
+                                                <td class="tbl-date"><span class="text-darken">02:00 pm, 22.10.2016</span></td>
+                                                <td class="tbl-completed">
+                                                    <button type="submit" class="btn btn-xs btn-info pull-right">Exam</button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.editors-list-table-->
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="deactivateEditors" tabindex="-1" role="dialog"
+                 aria-labelledby="deactivateEditors">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"></div>
+                        <div class="modal-body">
+                            <div class="confirm-box text-center">
+                                <span class="icon icon-xxl icon-red icon-warning"></span>
+                                <h2 class="confirm-ttl">confirm deactivation</h2>
+                                <p class="confirm-sb-ttl text-light">You are trying to deactivate editor’s <span
+                                        class="text-light-blue">(Richard Born)</span> account.</p>
+                                <p class="text-light">Are you sure?</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="btn-group-center">
+                                <button type="button" class="btn btn-135 btn-warning btn-outline" data-dismiss="modal">Cancel
+                                </button>
+                                <button type="button" class="btn btn-135 btn-warning">Deactivate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+</section>
+</body>
+</html>

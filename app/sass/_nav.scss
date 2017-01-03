@@ -1,0 +1,238 @@
+$nav-link-color: #f7fcfe;
+$nav-link-active: #1b5c81;
+$nav-link-hover: #d4effc;
+
+$nav-editors-fsize: 16px;
+$nav-editors-margin-bottom: 30px;
+
+.navbar-default {
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.nav-hover {
+  & .nav-list {
+    margin: 0;
+    & .nav-list-item {
+      //padding: 10px 0;
+      &:hover {
+        background-color: $nav-summary-bg;
+        padding: 0px 20px;
+        border-radius: 38px;
+        position: relative;
+        transition: all ease .3s;
+        margin-left: -20px;
+        margin-right: -20px;
+        & .nav-list-link {
+          color: $nav-link-hover;
+        }
+      }
+      & .nav-list-link {
+        color: $nav-link-color;
+        display: table;
+        padding: 10px 0;
+        &.link-active {
+          color: $nav-link-active;
+        }
+        &:hover {
+          color: $nav-link-hover;
+        }
+        .icon,
+        .link-tx {
+          vertical-align: middle;
+          display: table-cell;
+        }
+        .link-tx {
+          padding-left: 20px;
+          font-size: $font-size-control;
+        }
+      }
+    }
+  }
+}
+
+.nav-default {
+  & .nav-list {
+    margin: 0;
+    & .nav-list-item {
+      padding: 10px 0;
+    }
+    & .nav-list-link {
+      display: table;
+      &:hover {
+        position: relative;
+        transition: all ease .3s;
+        & .icon {
+          color: #f7fcfe;
+          transition: all ease .5s;
+        }
+      }
+      &.link-active {
+        color: $nav-link-color;
+        & .icon {
+          color: $nav-link-color;
+        }
+      }
+      & .icon,
+      .link-tx {
+        vertical-align: middle;
+        display: table-cell;
+      }
+      & .link-tx {
+        padding-left: 20px;
+        font-size: $font-size-control;
+      }
+    }
+  }
+}
+
+.sidebar-summary {
+  background-color: $nav-summary-bg;
+  color: $nav-summary-color;
+  position: relative;
+  min-height: $global-height;
+  padding: 13px 30px 0;
+  &:before {
+    content: ' ';
+    display: table;
+    background-image: url("/dist/img/border-circle.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+    top: -36px;
+    height: 36px;
+    left: 0;
+  }
+  .title-summary {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  hr {
+    margin: 30px 0;
+    border-top: 3px solid #599ac8;
+  }
+  & .icon {
+    color: #90cef1;
+  }
+  & .wallet-header,
+  & .limits-header {
+    padding-bottom: 10px;
+  }
+  & .wallet-title,
+  & .limits-title {
+    color: $nav-summary-tx-warning;
+  }
+  & .limits-admission {
+    color: $sidebar-font-color;
+  }
+}
+
+.wallet,
+.limits,
+.prepaire {
+  & .header-size {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  & .wallet-list-item,
+  & .prepaire-list-item {
+    margin-bottom: 5px;
+    &:last-child {
+      margin: 0;
+    }
+    & .btn {
+      margin: 3px 0;
+    }
+  }
+  & .wallet-currency,
+  & .wallet-summ {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  & .wallet-summ {
+    &.text-success-dark {
+      color: $state-success-dark-text;
+    }
+    &.text-danger {
+      color: $state-danger-text;
+    }
+    color: $sidebar-font-color;
+  }
+  & .limits-admission {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+//collapse customize
+.collapse-title {
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-editor {
+  font-size: $nav-editors-fsize;
+  @extend .fw-300;
+  margin-bottom: $nav-editors-margin-bottom;
+  margin-left: - ($nav-editors-margin-bottom / 2);
+  margin-right: - ($nav-editors-margin-bottom / 2);
+  > li {
+    @extend .text-center;
+  }
+  &.nav-pills {
+    > li {
+      @media (max-width: $screen-xs-max) {
+        display: inline-block;
+        float: none;
+        width: auto;
+        margin: 0 10px;
+        > a{
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+.panel-editors, .panel-authors {
+  .nav-pills {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+//progres-bar customize
+//css
+
+/*.sidebar-summary {
+    background-color: $nav-summary-bg;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 10px;
+        background-size: 20px 20px;
+        background-image: radial-gradient(circle at 10px -5px, transparent 12px, #324758 13px);
+        top: -10px;
+    }
+    :after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: repeat;
+        height: 15px;
+        background-size: 40px 20px;
+        background-image: radial-gradient(circle at 10px 15px, #324758 12px, transparent 13px);
+        top: -15px;
+    }
+}*/

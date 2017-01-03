@@ -1,0 +1,9 @@
+$table-link-color: #e1eef9;
+$table-link-color-visited: null;
+$table-link-color-hover: #97a3ae;
+$table-link-color-active: #e1eef9;
+
+
+.table-link{
+  @include links ($table-link-color, $table-link-color-visited, $table-link-color-hover, $table-link-color-active);
+}

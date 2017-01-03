@@ -1,0 +1,152 @@
+//outline btn mixin
+// Alternate buttons
+// --------------------------------------------------
+@mixin button-outline($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  &:focus,
+  &.focus {
+    color: darken($color, 25%);
+    //background-color: darken($background, 10%);
+    background-color: transparent;
+    border-color: darken($border, 25%);
+  }
+  &:hover {
+    color: darken($color, 12%);
+    //background-color: darken($background, 10%);
+    background-color: transparent;
+    border-color: darken($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: darken($color, 12%);
+    //background-color: darken($background, 10%);
+    background-color: transparent;
+    border-color: darken($border, 12%);
+    &:hover,
+    &:focus,
+    &.focus {
+      color: darken($color, 25%);
+      //background-color: darken($background, 17%);
+      background-color: transparent;
+      border-color: darken($border, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      color: darken($color, 50%);
+      background-color: $background;
+      border-color: $border;
+    }
+  }
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+//inverce btn mixin
+@mixin button-inverse($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+  &:focus,
+  &.focus {
+    color: darken($color, 5%);
+    //background-color: darken($background, 10%);
+    background-color: transparent;
+    border-color: darken($border, 5%);
+  }
+  &:hover {
+    color: darken($color, 10%);
+    //background-color: darken($background, 10%);
+    background-color: transparent;
+    border-color: darken($border, 10%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: darken($color, 12%);
+    //background-color: darken($background, 10%);
+    background-color: transparent;
+    border-color: darken($border, 12%);
+    &:hover,
+    &:focus,
+    &.focus {
+      color: darken($color, 12%);
+      //background-color: darken($background, 17%);
+      background-color: transparent;
+      border-color: darken($border, 12%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      color: darken($color, 50%);
+      background-color: $background;
+      border-color: $border;
+    }
+  }
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+//inverce btn mixin
+@mixin button-link-variant($color) {
+  color: $color;
+  &:focus,
+  &.focus {
+    color: darken($color, 5%);
+  }
+  &:hover {
+    color: darken($color, 10%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: darken($color, 12%);
+    &:hover,
+    &:focus,
+    &.focus {
+      color: darken($color, 12%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      color: darken($color, 50%);
+    }
+  }
+  .badge {
+    color: $color;
+  }
+}

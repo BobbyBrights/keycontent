@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css' href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="/dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section class="main-login main-dashboard">
+        <!-- mobile/tablet-nabvar -->
+        <nav class="navbar navbar-default navbar-fixed-top hidden-lg">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="toggle-mnu"><span></span></a>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Cross Finance" src="/dist/img/logo-sidebar.svg">
+                    </a>
+                    <!-- notify-mobile -->
+                    <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                    </div>
+                    <!-- /notify-mobile -->
+                </div>
+            </div>
+        </nav>
+        <!-- mobile/tablet-nabvar -->
+        <aside class="sidebar sidebar-dashboard">
+            <div class="sidebar-admin">
+                <div class="sidebar-logo visible-lg">
+                    <a href="/" title="Cross Finance">
+                        <img src="/dist/img/logo-sidebar.svg" alt="Cross Finance">
+                    </a>
+                </div>
+                <!-- notify-desctop -->
+                <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+                </div>
+                <!-- notify-desctop -->
+                <div class="sidebar-menu">
+                    <div class="user-profile">
+                        <div class="user-name">William Jefferson</div>
+                        <div class="user-status">
+                            <span class="icon icon-blue icon-warning"></span>
+                            <span class="status-tx">Not verified yet</span>
+                        </div>
+                        <div class="profile-logout">
+                            <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></div>
+                    </div>
+                    <nav class="nav-hover">
+                        <ul class="nav-list list-unstyled">
+                            <li class="nav-list-item">
+                                <a href="" class="nav-list-link">
+                                    <span class="icon icon-lg icon-refresh"></span><span class="link-tx">Payments and transfers</span></a>
+                            </li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-wallet"></span>
+                           <span class="link-tx"> Add funds</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-mastercard"></span> <span class="link-tx"> Cards & accounts</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-reports"></span> <span class="link-tx"> Reports </span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-tool"></span><span class="link-tx">Settings</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-paper"></span><span class="link-tx"> Fees</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link link-active"><span class="icon icon-lg icon-heart"></span><span class="link-tx"> Loyalty programm</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-info-question"></span><span class="link-tx"> Help & support</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar-summary-->
+            <div class="sidebar-summary">
+                <div class="collapse-list">
+                    <span class="collapse-title title-summary collapse in" role="button" data-toggle="collapse" href="#collapseSummary" aria-expanded="true" aria-controls="collapseExample">Summary <span class="icon icon-xs icon-arrow-down pull-right"></span></span>
+
+                    <div class="collapse in" id="collapseSummary" aria-expanded="true">
+                        <!--               wallet-block-->
+                        <div class="wallet">
+                            <div class="wallet-header">
+                                <span class="wallet-title">Cf-Wallet</span>
+                                <span class="walet-number pull-right">#000-150886</span>
+                            </div>
+                            <div class="wallet-body">
+                                <div class="wallet-list">
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">EUR</span>
+                                        <span class="pull-right">                         
+                                            <span class="wallet-summ">150 886,81</span>
+                                        <span class="icon icon-sm  icon-eur"></span>
+                                        </span>
+                                    </div>
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">USD</span>
+                                        <span class="pull-right">                         
+                                             <span class="wallet-summ">235 546,12</span>
+                                        <span class="icon icon-sm icon-usd"></span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--               /wallet-block-->
+                        <hr>
+                        <!--               limits-block-->
+                        <div class="limits">
+                            <div class="limits-header">
+                                <span class="limits-title">Limits</span>
+                            </div>
+                            <div class="limits-body">
+                                <div class="limits-admission">
+                                    <span class="admission-available text-success">1500,00</span><span class="admiss-all">/5 000,00</span></span>
+                                    <span class="icon icon-sm icon-eur pull-right"></span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span class="sr-only">40% Complete (success)</span>
+                                    </div>
+                                </div>
+                                <div class="limits-incoming">
+                                    <span>Incoming</span>
+                                    <span class="pull-right">for 365 days</span>
+                                </div>
+                            </div>
+                            <!--               /collapse-->
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-cprt">
+                    © Cross.finance LLC, 2016.
+                    <br> All Rights Reserved.
+                </div>
+            </div>
+            <!-- /sidebar-summary-->
+
+        </aside>
+        <main class="main-private sidebar-right">
+            <div class="dashboard-container">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <h1 class="top-title">Settings</h1>
+                            <h2 class="sub-title text-uppercase">Address</h2>
+                            <div class="settings-body">
+                                <div class="settings-address">
+                                    <h3 class="delivery-title fw-300">Enter a delivery address</h3>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6 col-xs-12">
+                                            <label class="text-darken">State:</label>
+                                            <select class="selectpicker" data-style="btn-blue" data-width="100%">
+                                                <option value="">Austria</option>
+                                                <option value="">Default select</option>
+                                                <option value="">Default select</option>
+                                                <option value="">Default select</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-xs-12 has-error">
+                                            <label class="text-darken">County:</label>
+                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter county">
+                                        </div>
+                                        <div class="form-group col-md-9 col-xs-12">
+                                            <label class="text-darken">City:</label>
+                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter city">
+                                        </div>
+                                        <div class="form-group col-md-3 col-xs-12">
+                                            <label class="text-darken">Postcode:</label>
+                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter code">
+                                        </div>
+
+                                        <div class="form-group col-md-12 col-xs-12">
+                                            <label class="text-darken">Address:</label>
+                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter Address">
+                                        </div>
+                                    </div>
+                                    </form>
+                                    </fieldset>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="documents">
+                                    <h2 class="text-uppercase">Documents</h2>
+                                    <h3 class="documents-title fw-300">Add required documents</h3>
+                                    <div class="documents-text">
+                                        <p>The document should not be more than 3 months old, contain the provided address as well as your full name, signature and stamp / barcode / QR code.</p>
+
+                                        <p>If a close relative (parents, children, a husband/wife) is registered at the address or the
+                                            <br> utility bills are issued in his/her name, you can upload a copy of one of the documents with his/her name as well as attach the copy of the document confirming your relationship (birth or marriage certificate)
+                                            <br>
+                                        </p>
+                                        <p>We require the following documents as the proof of your address:</p>
+                                    </div>
+                                </div>
+
+                                <div class="verification">
+                                    <ul class="verification-list list-unstyled">
+                                        <li class="verification-list-item">
+                                            <div class="list-item-left">
+                                                <span class="icon icon-xl icon-dark-blue icon-utility-paper"></span>
+                                                <span class="verification-type"> Utility bill</span>
+                                            </div>
+
+                                            <div class="list-item-right verify-upload">
+                                                <label class="inputAddFile-label" for="inputAddFileIdentity">
+                                                    <input id="inputAddFileIdentity" type="file" name="file" class="sr-only" alt="Attachment file">
+                                                </label>
+                                                <button class="btn btn-135 btn-warning pull-right">Upload</button>
+
+                                            </div>
+                                        </li>
+
+
+                                        <li class="verification-list-item">
+                                            <div class="list-item-left">
+                                                <span class="icon icon-xl icon-dark-blue icon-statement"></span>
+                                                <span class="verification-type"> Bank or credit card statement</span>
+                                            </div>
+                                            <div class="list-item-right verify-upload">
+                                                <label class="inputAddFile-label" for="inputAddFileAddress">
+                                                    <input id="inputAddFileAddress" type="file" name="file" class="sr-only" alt="Attachment file">
+                                                </label>
+                                                <button class="btn btn-135 btn-warning pull-right">Upload</button>
+
+                                            </div>
+                                        </li>
+
+                                        <li class="verification-list-item">
+                                            <div class="list-item-left">
+                                                <span class="icon icon-xl icon-dark-blue icon-certificate"></span>
+                                                <span class="verification-type certif-pad"> Certified tenancy agreement</span>
+                                            </div>
+                                            <div class="list-item-right verifi-success">
+                                                <span class="icon icon-lg text-success-dark icon-check-mark"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="info-block">
+                                        <span class="icon icon-lg icon-dark-blue icon-info-notification tbl-cell"></span><span class="info-text text-darken tbl-cell">
+                                            Copies should be uncut, with the resolution not less than 300dpi, maximum 2MB, jpg, jpeg, png, pdf
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- summary panel-->
+            <div class="summary-templates summary-bg summary-fixed">
+                <div class="summary-active">
+                    <div class="summary-body">
+                        <div class="col-xs-12">
+                            <h2 class="text-uppercase">Summary</h2>
+                            <div class="body-item item-card">
+                                <div class="body-item-list">State: <span class="text-light">Austria</span></div>
+                                <div class="body-item-list">County: <span class="text-light">Wien</span></div>
+                                <div class="body-item-list">City: <span class="text-light">1010</span></div>
+                                <div class="body-item-list">Post code: <span class="text-light">Am Gestade 1</span></div>
+                                <div class="body-item-list">Address: <span class="text-light">Confirmed</span></div>
+                            </div>
+
+                            <div class="body-item item-card">
+                                <div class="body-item-list">Uploaded documents:</div>
+                                <div class="body-item-list"><span class="text-darken">Utility bill:</span> <span class="text-light">my_utility_bill.jpg</span>
+                                    <button type="submit" class="btn btn-link btn-delete icon-delete"></button>
+                                </div>
+                                <div class="body-item-list"><span class="text-darken">Statement:</span> <span class="text-light">my_bank_state-
+ment.jpg</span>
+                                    <button type="submit" class="btn btn-link btn-delete icon-delete"></button>
+                                </div>
+                                <div class="body-item-list"><span class="text-darken">Certified tenancy agreement:</span> <span class="text-light">my_certified_tenancy_agree-
+ment.jpg</span>
+                                    <button type="submit" class="btn btn-link btn-delete icon-delete"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="user-validate">
+                            <button class="btn btn-lg btn-210 btn-warning">Save</button>
+                            <div class="clearfix"></div>
+                            <div class="validate-msg">
+                                <span class="icon icon-red icon-warning"></span>
+                                <span class="text-danger">Incorrect input!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /summary panel-->
+        </main>
+    </section>
+</body>
+
+</html>

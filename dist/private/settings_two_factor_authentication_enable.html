@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css' href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="/dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section class="main-login main-dashboard">
+        <!-- mobile/tablet-nabvar -->
+        <nav class="navbar navbar-default navbar-fixed-top hidden-lg">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="toggle-mnu"><span></span></a>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Cross Finance" src="/dist/img/logo-sidebar.svg">
+                    </a>
+                    <!-- notify-mobile -->
+                    <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                    </div>
+                    <!-- /notify-mobile -->
+                </div>
+            </div>
+        </nav>
+        <!-- mobile/tablet-nabvar -->
+        <aside class="sidebar sidebar-dashboard">
+            <div class="sidebar-admin">
+                <div class="sidebar-logo visible-lg">
+                    <a href="/" title="Cross Finance">
+                        <img src="/dist/img/logo-sidebar.svg" alt="Cross Finance">
+                    </a>
+                </div>
+
+                <!-- notify-desctop -->
+                <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+                </div>
+                <!-- notify-desctop -->
+
+                <div class="sidebar-menu">
+                    <div class="user-profile">
+                        <div class="user-name">William Jefferson</div>
+                        <div class="user-status">
+                            <span class="icon icon-blue icon-warning"></span>
+                            <span class="status-tx">Not verified yet</span>
+                        </div>
+                        <div class="profile-logout">
+                            <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></div>
+                    </div>
+                    <nav class="nav-hover">
+                        <ul class="nav-list list-unstyled">
+                            <li class="nav-list-item">
+                                <a href="" class="nav-list-link">
+                                    <span class="icon icon-lg icon-refresh"></span><span class="link-tx">Payments and transfers</span></a>
+                            </li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-wallet"></span>
+                           <span class="link-tx"> Add funds</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-mastercard"></span> <span class="link-tx"> Cards & accounts</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-reports"></span> <span class="link-tx"> Reports </span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-tool"></span><span class="link-tx">Settings</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-paper"></span><span class="link-tx"> Fees</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link link-active"><span class="icon icon-lg icon-heart"></span><span class="link-tx"> Loyalty programm</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-info-question"></span><span class="link-tx"> Help & support</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar-summary-->
+            <div class="sidebar-summary">
+                <div class="collapse-list">
+                    <span class="collapse-title title-summary collapse in" role="button" data-toggle="collapse" href="#collapseSummary" aria-expanded="true" aria-controls="collapseExample">Summary <span class="icon icon-xs icon-arrow-down pull-right"></span></span>
+
+                    <div class="collapse in" id="collapseSummary" aria-expanded="true">
+                        <!--               wallet-block-->
+                        <div class="wallet">
+                            <div class="wallet-header">
+                                <span class="wallet-title">Cf-Wallet</span>
+                                <span class="walet-number pull-right">#000-150886</span>
+                            </div>
+                            <div class="wallet-body">
+                                <div class="wallet-list">
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">EUR</span>
+                                        <span class="pull-right">                         
+                                            <span class="wallet-summ">150 886,81</span>
+                                        <span class="icon icon-sm  icon-eur"></span>
+                                        </span>
+                                    </div>
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">USD</span>
+                                        <span class="pull-right">                         
+                                             <span class="wallet-summ">235 546,12</span>
+                                        <span class="icon icon-sm icon-usd"></span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--               /wallet-block-->
+                        <hr>
+                        <!--               limits-block-->
+                        <div class="limits">
+                            <div class="limits-header">
+                                <span class="limits-title">Limits</span>
+                            </div>
+                            <div class="limits-body">
+                                <div class="limits-admission">
+                                    <span class="admission-available text-success">1500,00</span><span class="admiss-all">/5 000,00</span></span>
+                                    <span class="icon icon-sm icon-eur pull-right"></span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span class="sr-only">40% Complete (success)</span>
+                                    </div>
+                                </div>
+                                <div class="limits-incoming">
+                                    <span>Incoming</span>
+                                    <span class="pull-right">for 365 days</span>
+                                </div>
+                            </div>
+                            <!--               /collapse-->
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-cprt">
+                    © Cross.finance LLC, 2016.
+                    <br> All Rights Reserved.
+                </div>
+            </div>
+            <!-- /sidebar-summary-->
+
+        </aside>
+        <main class="main-private">
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <div class="col-xs-12">
+                        <h1 class="top-title">Settings</h1>
+                        <h2 class="sub-title text-uppercase">Two-factor authentication 
+                        <span class="text-capitalize fw-300 text-success-dark hide">(Enabled)</span>
+                        <span class="text-capitalize fw-300 text-warning-dark">(Disabled)</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <!-- authentication disable -->
+                    <div class="authentication">
+                       <div class="authentication-text">
+                                    <p>When you enable 2-Step Verification (also known as two-factor authentication), you add an extra <br>
+                                     layer of security to your account. You sign in with something you know (your password) and something you have (a code sent to your phone).</p>
+                                </div>                                                        
+                        <div id="collapseSms" class="settings-form adress-form collapse">
+                            <div class="form-row">
+                                <div class="form-group form-290 col-xs-12 has-error">
+                                    <label class="text-darken">Enter code from SMS:</label>
+                                    <input type="password" class="form-control form-dark-blue" placeholder="Enter code">
+                                </div>                                                           
+                            </div>
+                            <div class="btn-change">
+                                <button class="btn btn-135 btn-outline" type="button" onclick="$('#collapseSms, #collapseSms-2').collapse('toggle');">Cancel</button>
+                                <button class="btn btn-135 btn-warning" type="button" onclick="$('#collapseSms, #collapseSms-2').collapse('toggle');">Enable</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="btn-confirm">
+                            <div id="collapseSms-2" class="settings-form adress-form collapse in">
+                                <div class="btn-edit">
+                                    <button class="btn btn-135 btn-warning" type="button" onclick="$('#collapseSms, #collapseSms-2').collapse('toggle');">Enable</button>
+                                </div>
+                            </div </div>
+                        </div>                       
+                    </div>
+                    <!-- /authentication disable -->
+                    
+                </div>
+            </div>
+            </div>
+        </main>
+    </section>
+</body>
+
+</html>

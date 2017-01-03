@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'keycontent';
+  src:  url('../fonts/keycontent.eot?k8cd6r');
+  src:  url('../fonts/keycontent.eot?k8cd6r#iefix') format('embedded-opentype'),
+  url('../fonts/keycontent.ttf?k8cd6r') format('truetype'),
+  url('../fonts/keycontent.woff?k8cd6r') format('woff'),
+  url('../fonts/keycontent.svg?k8cd6r#keycontent') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'keycontent' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-blue{
+   color: #1B5C81; 
+}
+.icon-dark-blue{
+   color: #4b789b; 
+}
+.icon-hidark-blue{
+   color: #324758; 
+}
+.icon-s-blue{
+    color: $sidebar-bg;
+}
+.icon-red{
+    color: $state-danger-text;
+}
+.icon-green{
+    color: $state-success-dark-text;
+}
+.icon-l-blue{
+    color: $sidebar-font-color;
+}
+.icon-yellow{
+    color: $brand-warning;
+}
+
+.icon-xxl{
+    font-size: 50px;
+}
+.icon-xl{
+    font-size: 30px;
+}
+.icon-lg{
+    font-size: 24px;
+}
+.icon-sm{
+    font-size: 18px;
+}
+.icon-xs{
+    font-size: 16px;
+}
+.icon-xxs{
+    font-size: 12px;
+}
+
+.icon-xl.icon-certificate{
+    font-size: 36px;
+    left: -3px;
+}
+
+.icon-attach-cv:before {
+  content: "\e941";
+}
+.icon-login-data:before {
+  content: "\e942";
+}
+.icon-professional-data:before {
+  content: "\e944";
+}
+.icon-analog-stopwatch:before {
+  content: "\e93f";
+}
+.icon-category:before {
+  content: "\e940";
+}
+.icon-columns:before {
+  content: "\e93e";
+}
+.icon-female:before {
+  content: "\e939";
+}
+.icon-filter:before {
+  content: "\e93a";
+}
+.icon-incoming-request:before {
+  content: "\e93b";
+}
+.icon-male:before {
+  content: "\e93c";
+}
+.icon-quality-test:before {
+  content: "\e93d";
+}
+.icon-feather:before {
+  content: "\e943";
+}
+.icon-arrow-down:before {
+  content: "\e902";
+}
+.icon-arrow-up:before {
+  content: "\e90d";
+}
+.icon-arrow-left:before {
+  content: "\e914";
+}
+.icon-arrow-right:before {
+  content: "\e934";
+}
+.icon-logout:before {
+  content: "\e935";
+}
+.icon-another-account:before {
+  content: "\e900";
+}
+.icon-arrow-circle-down:before {
+  content: "\e903";
+}
+.icon-refresh:before {
+  content: "\e904";
+}
+.icon-bitcoin:before {
+  content: "\e905";
+}
+.icon-heart:before {
+  content: "\e906";
+}
+.icon-bank-transfer:before {
+  content: "\e907";
+}
+.icon-reports:before {
+  content: "\e908";
+}
+.icon-calendar:before {
+  content: "\e909";
+}
+.icon-certificate:before {
+  content: "\e90a";
+}
+.icon-transfer-arrow-h:before {
+  content: "\e901";
+}
+.icon-transfer-arrow-v:before {
+  content: "\e936";
+}
+.icon-check-mark:before {
+  content: "\e90b";
+}
+.icon-delete:before {
+  content: "\e90f";
+}
+.icon-check-mark-rounded:before {
+  content: "\e90c";
+}
+.icon-mass-payment:before {
+  content: "\e91b";
+}
+.icon-clip:before {
+  content: "\e90e";
+}
+.icon-edit:before {
+  content: "\e910";
+}
+.icon-eur:before {
+  content: "\e911";
+}
+.icon-gift:before {
+  content: "\e912";
+}
+.icon-graphic:before {
+  content: "\e913";
+}
+.icon-home:before {
+  content: "\e915";
+}
+.icon-identity:before {
+  content: "\e916";
+}
+.icon-eye-visible:before {
+  content: "\e933";
+}
+.icon-eye-invisible:before {
+  content: "\e917";
+}
+.icon-key:before {
+  content: "\e918";
+}
+.icon-language:before {
+  content: "\e919";
+}
+.icon-info-notification:before {
+  content: "\e91a";
+}
+.icon-info-question:before {
+  content: "\e92b";
+}
+.icon-usd:before {
+  content: "\e92f";
+}
+.icon-mastercard:before {
+  content: "\e91c";
+}
+.icon-wallet:before {
+  content: "\e91d";
+}
+.icon-mail:before {
+  content: "\e91e";
+}
+.icon-on-moderation:before {
+  content: "\e920";
+}
+.icon-cross-pass:before {
+  content: "\e921";
+}
+.icon-pay-pass:before {
+  content: "\e922";
+}
+.icon-phone:before {
+  content: "\e923";
+}
+.icon-phone-email:before {
+  content: "\e924";
+}
+.icon-plus:before {
+  content: "\e925";
+}
+.icon-client-list:before {
+  content: "\e926";
+}
+.icon-warning:before {
+  content: "\e927";
+}
+.icon-notify:before {
+  content: "\e928";
+}
+.icon-notifications:before {
+  content: "\e91f";
+}
+.icon-statement:before {
+  content: "\e929";
+}
+.icon-cancel:before {
+  content: "\e92a";
+}
+.icon-ip-rest:before {
+  content: "\e92c";
+}
+.icon-tool:before {
+  content: "\e92d";
+}
+.icon-up-arrow:before {
+  content: "\e92e";
+}
+.icon-utility-paper:before {
+  content: "\e931";
+}
+.icon-paper:before {
+  content: "\e937";
+}
+.icon-pdf:before {
+  content: "\e938";
+}
+.icon-user:before {
+  content: "\e930";
+}
+.icon-webmoney:before {
+  content: "\e932";
+}
+

@@ -1,0 +1,38 @@
+$font-size-slider-label: 18px;
+$font-size-slider-rate: 16px;
+$font-size-slider-result: 30px;
+
+
+.slider-item{
+  > label{
+    font-size: $font-size-slider-label;
+    @extend .fw-300;
+    margin: 0;
+  }
+}
+
+.slider-handle-value {
+  display: table-cell;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.slider-rate{
+  font-size: $font-size-slider-rate;
+  @extend .text-light;
+  @extend .fw-300;
+}
+
+.average{
+  &-result{
+    font-size: $font-size-slider-result;
+    @extend .fw-300;
+    margin-bottom: $font-size-slider-result;
+  }
+  .sub-title{
+    @extend .fw-300;
+    line-height: inherit;
+  }
+}

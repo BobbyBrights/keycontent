@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'flama';
+    src: url('../fonts/flama/flama_regular-webfont.woff2') format('woff2'),
+    url('../fonts/flama/flama_regular-webfont.woff') format('woff'),
+    url('../fonts/flama/flama_regular-webfont.svg#flamaregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flama';
+    src: url('../fonts/flama/flama-bold-opentype-webfont.woff2') format('woff2'),
+    url('../fonts/flama/flama-bold-opentype-webfont.woff') format('woff'),
+    url('../fonts/flama/flama-bold-opentype-webfont.svg#flamabold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'flama';
+    src: url('../fonts/flama/flama-light-webfont.woff2') format('woff2'),
+    url('../fonts/flama/flama-light-webfont.woff') format('woff'),
+    url('../fonts/flama/flama-light-webfont.svg#flamalight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+/*@media all and (-webkit-min-device-pixel-ratio:0) {*/
+    /*@font-face {*/
+        /*font-family: 'flama';*/
+        /*src: url('../fonts/flama/flama_regular-webfont.svg#flamaregular') format('svg');*/
+        /*font-weight: 400;*/
+        /*font-style: normal;*/
+    /*}*/
+/*}*/

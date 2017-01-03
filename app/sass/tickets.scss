@@ -1,0 +1,43 @@
+.discussion {
+    padding: 0 15px;
+    &-tabs {
+        padding-bottom: 20px;
+    }
+    &-item {
+        margin-bottom: 15px;
+        /*&:last-child {
+            margin-bottom: 0;
+        }*/
+        .discussion-item-user {
+            background-color: #324758;
+            padding: 10px;
+            margin: 0 -10px;
+            border-radius: 10px;
+            .discussion-item-title {
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+//collapse
+.collapse.in .icon-arrow-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.collapse.collapsed .icon-arrow-down {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="../../../dist/css/main.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="../../../dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css' href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../../../dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="../../../dist/js/custom.js"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section class="main-login main-dashboard">
+    <!-- mobile/tablet-nabvar -->
+    <nav class="navbar navbar-default navbar-fixed-top hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="toggle-mnu"><span></span></a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Keycontent" src="../../img/logo-navbar-mobile.png">
+                </a>
+                <!-- notify-mobile -->
+                <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                </div>
+                <!-- /notify-mobile -->
+            </div>
+        </div>
+    </nav>
+    <!-- mobile/tablet-nabvar -->
+    <aside class="sidebar sidebar-dashboard">
+        <div class="sidebar-admin">
+            <div class="sidebar-logo visible-lg">
+                <a href="/" title="More than writers">
+                    <img src="../../img/logo-admin.png" alt="More than writers">
+                </a>
+            </div>
+            <!-- notify-desctop -->
+            <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+            </div>
+            <!-- notify-desctop -->
+            <div class="sidebar-menu">
+                <div class="user-profile v-middle">
+                    <span class="user-name">Administrator</span>
+                    <span class="profile-logout">
+                        <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></span>
+                </div>
+                <nav class="nav-hover">
+                    <ul class="nav-list list-unstyled">
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link link-active"><span class="icon icon-lg icon-tool"></span><span class="link-tx">Tests management</span></a>
+                        </li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-edit"></span><span class="link-tx"> Editors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-feather"></span> <span class="link-tx"> Authors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-paper"></span> <span class="link-tx"> Content</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-cprt">
+                © Cross.finance LLC, 2016.
+                <br> All Rights Reserved.
+            </div>
+        </div>
+    </aside>
+    <main class="main-private">
+        <div class="dashboard-container">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="top-title">Tests management</h1>
+                    <div class="well">
+                        <h2 class="well-title text-uppercase"> Created tests list</h2>
+                        <a href="../administrator/admin_test-management-test-create.html" type="submit" class="btn btn-link btn-icon"><span class="icon icon-plus"></span></a>
+
+                        <!--.template-empty-list-->
+                        <div class="row">
+                            <div class="template-empty text-center hide">
+                                <button type="submit" class="btn btn-link btn-icon"><span class="icon icon-plus"></span></button>
+                                <div class="template-emty-body">
+                                    <div class="template-emty-header">
+                                        <span class="icon icon-xl icon-info-notification icon-dark-blue"></span>
+                                        <span class="template-emty-title center-block text-center">Created tests list empty</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--.template-empty-list-->
+
+                        <table class="table table-striped td-first-striped-color">
+                            <thead>
+                                <tr class="v-middle">
+                                    <th>Topic</th>
+                                    <th class="text-right">Creation date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><a class="table-link" href="../administrator/admin_test-management-test-create.html">8 Things Business Users Should Know About the New iPhone 7</a></td>
+                                <td class="text-right">02:00 pm, 22.10.2016 </td>
+                            </tr>
+                            <tr>
+                                <td><a class="table-link" href="../administrator/admin_test-management-test-create.html">8 Things Business Users Should Know About the New iPhone 7</a></td>
+                                <td class="text-right">02:00 pm, 22.10.2016 </td>
+                            </tr>
+                            <tr>
+                                <td><a class="table-link" href="../administrator/admin_test-management-test-create.html">8 Things Business Users Should Know About the New iPhone 7</a></td>
+                                <td class="text-right">02:00 pm, 22.10.2016 </td>
+                            </tr>
+                            <tr>
+                                <td><a class="table-link" href="../administrator/admin_test-management-test-create.html">8 Things Business Users Should Know About the New iPhone 7</a></td>
+                                <td class="text-right">02:00 pm, 22.10.2016 </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </main>
+</section>
+</body>
+</html>

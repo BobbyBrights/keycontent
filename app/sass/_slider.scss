@@ -1,0 +1,19 @@
+$slider-item-margin: 30px;
+
+
+.slider-item{
+  position: relative;
+    & + &{
+      margin-top: $slider-item-margin;
+    }
+}
+
+
+.slider-rate{
+  &-min{
+    @extend .pull-left;
+  }
+  &-max{
+    @extend .pull-right;
+  }
+}

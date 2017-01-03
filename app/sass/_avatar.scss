@@ -1,0 +1,18 @@
+$avatar-img-margin: 25px;
+$avatar-img-wh: 80px;
+
+
+.data-avatar{
+  margin: $avatar-img-margin 0;
+  width: $avatar-img-wh;
+  height: $avatar-img-wh;
+}
+.avatar-sidebar{
+  width: $avatar-img-wh / 2;
+  height: $avatar-img-wh / 2;
+}
+.user-avatar + .user-name{
+  padding-left: 10px;
+}
+
+

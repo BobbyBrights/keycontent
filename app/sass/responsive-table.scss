@@ -1,0 +1,160 @@
+$font-size-table-th: 14px;
+$font-size-table-tr: 16px;
+
+/*
+	Responsive Table
+	*/
+$table-striped-last-tx-color: #678293 !default;
+$table-striped-first-tx-color: #e1eef9 !default;
+
+.reports {
+    hr {
+        margin: 10px auto 0;
+    }
+    .table-reports {
+        font-weight: 400;
+        & thead > tr,
+        & thead > tr > th {
+            color: $brand-darken;
+            //line-height: 2;
+        }
+        & tbody > tr,
+        & tbody > tr > td {
+            color: #e1eef9;
+        }
+    }
+}
+
+//mobile font color thead
+.well {
+    .table-striped>tbody>tr:nth-of-type(odd) {
+        background-color: #324758;
+    }
+      .table-striped>tbody>tr:nth-of-type(odd) .tablesaw-cell-label {
+        color: #4b789b;
+    }
+    .table-striped>tbody>tr:nth-of-type(even) .tablesaw-cell-label {
+        color: #4b789b;
+    }
+
+
+  .table-striped{
+    &.td-first-striped-color{
+      > tbody > tr > td{
+        &:first-child {
+          color: $table-striped-first-tx-color;
+        }
+        &:last-child{
+          color: $table-striped-last-tx-color;
+        }
+      }
+    }
+  }
+}
+
+//no well bg
+//table striped no count thead
+.table-striped {
+    & thead > tr,
+    & thead > tr > th {
+        font-weight: 400;
+        color: $brand-darken;
+        //line-height: 2;
+    }
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #364d5f;
+}
+
+//table striped count whith thead
+.table-th-striped {
+    & thead > tr,
+    & thead > tr > th {
+        font-weight: 400;
+        color: $brand-darken;
+        //line-height: 2;
+    }
+}
+
+//table cheked
+.table-cheked {
+    & thead > tr,
+    & thead > tr > th {
+        font-weight: 400;
+        color: $brand-darken;
+        //line-height: 2;
+    }
+     & thead > tr,
+    & thead > tr > th,
+    & tbody > tr,
+    & tbody > tr > td {
+        padding: 8px 15px;
+    }
+    & .radio,
+    & .checkbox {
+        margin: 0;
+    }
+    & .checkbox-info {
+        label:after, label:before{
+          background-color: #364d5f;   
+        }
+    }
+}
+
+.table-th-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #364d5f;
+}
+
+// loyalty bonuses table
+.table-bonuses {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0;
+    & thead > tr,
+    & thead > tr > th,
+    & tbody > tr,
+    & tbody > tr > td {
+        padding: 5px 15px;
+    }
+}
+
+//table-ip-adrress
+.table-ip-address {
+    font-size: $font-size-table-tr;
+    font-weight: 400;
+    margin-bottom: 0;
+    .ip-date-tx {
+        color: #678293;
+    }
+    & thead > tr,
+    & thead > tr > th,
+    & tbody > tr,
+    & tbody > tr > td {
+        padding: 5px 15px;
+    }
+}
+
+//loyalty bonuses tr bg
+.well {
+    .table-th-striped>tbody>tr:nth-of-type(even) {
+        background-color: #324758;
+    }
+}
+
+.table-category{
+  @extend .table-ip-address;
+  & thead > tr > th{
+    font-size: $font-size-table-th;
+  }
+
+}
+
+table{
+  @media (min-width: $screen-md-min) {
+    .tbl-name{
+      @include text-overflow();
+      max-width: 200px;
+    }
+  }
+}

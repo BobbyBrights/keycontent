@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="../../../dist/css/main.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="../../../dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css'
+          href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../../../dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="../../../dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section class="main-login main-dashboard">
+    <!-- mobile/tablet-nabvar -->
+    <nav class="navbar navbar-default navbar-fixed-top visible-xs visible-sm">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="toggle-mnu"><span></span></a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Cross Finance" src="/dist/img/logo-sidebar.svg">
+                </a>
+                <!-- notify-mobile -->
+                <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                </div>
+                <!-- /notify-mobile -->
+            </div>
+        </div>
+    </nav>
+    <!-- mobile/tablet-nabvar -->
+    <aside class="sidebar sidebar-dashboard">
+        <div class="sidebar-admin">
+            <div class="sidebar-logo visible-lg">
+                <a href="/" title="More than writers">
+                    <img src="../../img/logo-admin.png" alt="More than writers">
+                </a>
+            </div>
+            <!-- notify-desctop -->
+            <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+            </div>
+            <!-- notify-desctop -->
+            <div class="sidebar-menu">
+                <div class="user-profile v-middle">
+                    <span class="user-name">Administrator</span>
+                    <span class="profile-logout">
+                        <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></span>
+                </div>
+                <nav class="nav-hover">
+                    <ul class="nav-list list-unstyled">
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link link-active"><span
+                                    class="icon icon-lg icon-tool"></span><span class="link-tx">Tests management</span></a>
+                        </li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-edit"></span><span class="link-tx"> Editors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-feather"></span> <span class="link-tx"> Authors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-paper"></span> <span class="link-tx"> Content</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-cprt">
+                © Cross.finance LLC, 2016.
+                <br> All Rights Reserved.
+            </div>
+        </div>
+    </aside>
+    <main class="main-private">
+        <div class="dashboard-container">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="top-title">Tests management</h1>
+                <div class="group-title-btn">
+                    <h2 class="group-title text-uppercase"> Test details</h2>
+                    <button data-toggle="modal" data-target="#deleteTestModal" class="btn btn-xs btn-info">Delete test
+                    </button>
+                </div>
+
+                <div class="modal fade" id="deleteTestModal" tabindex="-1" role="dialog"
+                     aria-labelledby="deleteTestModal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header"></div>
+                            <div class="modal-body">
+                                <div class="confirm-box text-center">
+                                    <span class="icon icon-xxl icon-red icon-warning"></span>
+                                    <h2 class="confirm-ttl">Confirm deletion</h2>
+                                    <p class="confirm-sb-ttl text-light">You are trying to delete test
+                                    <p class="text-light-blue">8 Things Business Users Should Know About the New iPhone
+                                        7</p>
+                                    <p class="text-light">Are you sure?</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="btn-group-center">
+                                    <button type="button" class="btn btn-135 btn-warning btn-outline" data-dismiss="modal">Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-135 btn-warning">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <!--.form-static-->
+                    <div class="form-static">
+                            <div class="form-group col-md-3 col-xs-12">
+                                <label class="text-darken">Test category:</label>
+                                <select class="selectpicker select-add" data-style="btn-blue" data-width="100%"
+                                        data-live-search="true">
+                                    <option data-tokens="English">English</option>
+                                    <option data-tokens="Spanish">Spanish</option>
+                                    <option data-tokens="Serbian">Serbian</option>
+                                </select>
+                            </div>
+                    <div class="clearfix"></div>
+
+                    <div class="form-group col-md-3 col-xs-12">
+                        <!--.file-upload-->
+                        <div class="file-upload">
+                            <label class="text-darken">Upload file example:</label>
+                            <ul class="file-upload list-unstyled">
+                                <li class="file-upload-list hide">
+                                    <span class="file-upload-text-title text-light">Example_text.pdf</span>
+                                    <button type="submit" class="btn btn-link btn-delete icon-delete"></button>
+                                </li>
+                            </ul>
+                            <div class="upload">
+                                <button class="btn btn-static-block btn-warning btn-upload">Choose file</button>
+                                <label class="inputAddFile-label" for="inputAddFile">
+                                    <input id="inputAddFile" type="file" name="file" class="sr-only"
+                                           alt="Attachment file"
+                                           accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, ext/plain"
+                                           multiple>
+                                </label>
+                            </div>
+                            <!-- info-block -->
+                            <div class="info-block">
+                                <span class="icon icon-lg icon-dark-blue icon-info-notification tbl-cell"></span><span
+                                    class="info-text text-darken tbl-cell">You can add up to 5 files (maximum 2MB, jpg, jpeg, png, pdf)</span>
+                            </div>
+                            <!-- /info-block -->
+                            <script>
+                                $(document).ready(function () {
+                                    $('#inputAddFile').change(function () {
+                                        $('.file-upload-list').removeClass('hide');
+                                    });
+
+                                    $('.btn-delete').on('click', function () {
+                                        $('.file-upload-list').remove();
+                                    });
+                                });
+                            </script>
+                        </div>
+                        <!--/.file-upload-->
+                        </div>
+                    </div>
+                    <!--/.form-static-->
+                    <div class="clearfix"></div>
+
+                    <div class="form-group form-md-5 form-xs-12">
+                        <label class="text-darken">Test topic:</label>
+                        <textarea class="form-control form-dark-blue" resize="vertical" name="topic" id="" cols="30"
+                                  rows="3" placeholder="Enter topic text..."></textarea>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="form-group form-md-1 form-xs-12">
+                        <label class="text-darken">Test timer:</label>
+                        <input type="text" class="form-control form-dark-blue" placeholder="Enter time">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="settings-check-list">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- questionnaire-check-list-->
+                            <ul class="table-cheked check-list list-unstyled pad-15">
+                                <li class="check-list-item text-darken">Examination sections:</li>
+                                <li class="check-list-item"><span class="checkbox checkbox-info"><input id="checkbox1"
+                                                                                                        type="checkbox"><label
+                                        for="checkbox1">Style</label></span></li>
+                                <li class="check-list-item"><span class="checkbox checkbox-info"><input id="checkbox2"
+                                                                                                        type="checkbox"><label
+                                        for="checkbox2">Grammar</label></span></li>
+                                <li class="check-list-item"><span class="checkbox checkbox-info"><input id="checkbox3"
+                                                                                                        type="checkbox"
+                                                                                                        checked><label
+                                        for="checkbox3">Briefing respect</label></span></li>
+                                <li class="check-list-item"><span class="checkbox checkbox-info"><input id="checkbox4"
+                                                                                                        type="checkbox"><label
+                                        for="checkbox4">Information</label></span></li>
+                                <li class="check-list-item"><span class="checkbox checkbox-info"><input id="checkbox5"
+                                                                                                        type="checkbox"><label
+                                        for="checkbox5">Information</label></span></li>
+                                <li class="check-list-item"><span class="checkbox checkbox-info"><input id="checkbox6"
+                                                                                                        type="checkbox"><label
+                                        for="checkbox6">Interest</label></span></li>
+                                <li class="check-list-item"><span class="checkbox checkbox-info"><input id="checkbox7"
+                                                                                                        type="checkbox"><label
+                                        for="checkbox7">Tone</label></span></li>
+
+                                <li class="check-list-item check-all"><span class="checkbox checkbox-info"><input
+                                        id="checkbox8" type="checkbox"><label for="checkbox8">Select all</label></span>
+                                </li>
+                            </ul>
+                            <!-- questionnaire-check-list-->
+
+                            <div class="check-list-btn btn-inline">
+                                <button class="btn btn-135 btn-outline">Back</button>
+                                <button class="btn btn-135 btn-warning">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+// Alternate outline buttons
+// --------------------------------------------------
+.btn-default {
+  //@include button-outline($btn-default-color, $btn-default-bg, $btn-default-border);
+  &.btn-outline {
+    @include button-outline($btn-default-bg, transparent, $btn-default-border);
+  }
+}
+
+.btn-primary {
+  //@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  &.btn-outline {
+    @include button-outline($btn-primary-bg, transparent, $btn-primary-border);
+  }
+}
+
+// Success appears as green
+.btn-success {
+  //@include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+  &.btn-outline {
+    @include button-outline($btn-success-bg, transparent, $btn-success-border);
+  }
+}
+
+// Info appears as blue-green
+.btn-info {
+  //@include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+  &.btn-outline {
+    @include button-outline($btn-info-bg, transparent, $btn-info-border);
+  }
+}
+
+// Warning appears as orange
+.btn-warning {
+  // @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+  &.btn-outline {
+    @include button-outline ($btn-warning-bg, transparent, $btn-warning-border);
+  }
+}
+
+// Danger and error appear as red
+.btn-danger {
+  // @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  &.btn-outline {
+    @include button-outline ($btn-danger-bg, transparent, $btn-danger-border);
+    &.btn-inverse {
+      @include button-inverse ($btn-danger-color, transparent, $btn-danger-color);
+    }
+  }
+}

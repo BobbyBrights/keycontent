@@ -1,0 +1,35 @@
+$topic-comments-font-size: 16px;
+$dash-box-list-padding: 40px;
+$remain-font-size: 18px;
+$remain-font-size-count: 36px;
+
+.topic-footer {
+  margin-bottom: 30px;
+}
+.topic-comments{
+  font-size: $topic-comments-font-size;
+}
+.help-block:empty{
+  display: none;
+}
+
+
+.dash-box-list{
+  padding-left: $dash-box-list-padding;
+}
+.item-remain{
+  font-size: $remain-font-size;
+  margin-bottom: 20px;
+  .body-item-list{
+    @extend .tbl;
+    .remain-txt, .remain-words{
+      display: table-cell;
+    }
+  }
+  .remain-time, .remain-words{
+    display: table-cell;
+    @extend .text-right;
+    font-size: $remain-font-size-count;
+    line-height: 1;
+  }
+}

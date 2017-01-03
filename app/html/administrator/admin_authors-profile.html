@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="../../../dist/css/main.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../../dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="../../../dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css'
+          href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../../../dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="../../../dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="../../../dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<section class="main-login main-dashboard">
+    <!-- mobile/tablet-nabvar -->
+    <nav class="navbar navbar-default navbar-fixed-top hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="toggle-mnu"><span></span></a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Keycontent" src="../../img/logo-navbar-mobile.png">
+                </a>
+                <!-- notify-mobile -->
+                <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                </div>
+                <!-- /notify-mobile -->
+            </div>
+        </div>
+    </nav>
+    <!-- mobile/tablet-nabvar -->
+    <aside class="sidebar sidebar-dashboard">
+        <div class="sidebar-admin">
+            <div class="sidebar-logo visible-lg">
+                <a href="/" title="More than writers">
+                    <img src="../../img/logo-admin.png" alt="More than writers">
+                </a>
+            </div>
+            <!-- notify-desctop -->
+            <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+            </div>
+            <!-- notify-desctop -->
+            <div class="sidebar-menu">
+                <div class="user-profile v-middle">
+                    <span class="user-name">Administrator</span>
+                    <span class="profile-logout">
+                        <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></span>
+                </div>
+                <nav class="nav-hover">
+                    <ul class="nav-list list-unstyled">
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link"><span
+                                    class="icon icon-lg icon-tool"></span><span class="link-tx">Tests management</span></a>
+                        </li>
+                        <li class="nav-list-item">
+                            <a href="" class="nav-list-link"><span
+                                    class="icon icon-lg icon-category"></span><span
+                                    class="link-tx">Tests categoories</span></a>
+                        </li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link link-active"><span
+                                class="icon icon-lg icon-edit"></span><span class="link-tx"> Editors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-feather"></span> <span class="link-tx"> Authors</span></a></li>
+                        <li class="nav-list-item"><a href="" class="nav-list-link"><span
+                                class="icon icon-lg icon-paper"></span> <span class="link-tx"> Content</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-cprt">
+                © Cross.finance LLC, 2016.
+                <br> All Rights Reserved.
+            </div>
+        </div>
+    </aside>
+    <main class="main-private sidebar-right tablet-push">
+        <div class="dashboard-container">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="top-title">Authors</h1>
+                <h3 class="sub-title fw-300">Dean Winchester</h3>
+
+                <div class="panel-authors">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="authors-item">
+                            <p class="text-darken">Author’s ID:</p>
+                            <h3 class="sub-title fw-300">45688</h3>
+                        </li>
+                        <li class="account-item">
+                            <p class="text-darken">Account status:</p>
+                            <ul class="account-item-list list-unstyled list-inline">
+                                <li><h3 class="sub-title text-success-dark fw-300">Active</h3></li>
+                                <li class="pull-right">
+                                    <button data-toggle="modal" data-target="#deactivateEditors"
+                                            class="btn btn-xs btn-info">Deactivate
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- nav tabs -->
+                <ul class="nav nav-pills nav-editor" role="tablist">
+                    <li role="presentation" class="active"><a class="btn-tabs v-middle" href="#authors-test"
+                                                              aria-controls="home" role="tab" data-toggle="tab">
+                        <span class="icon icon-lg icon-quality-test visible-xs"></span><span class="hidden-xs">Test</span></a></li>
+                    <li role="presentation"><a class="btn-tabs v-middle" href="#authors-persondata" aria-controls="home"
+                                               role="tab" data-toggle="tab"><span class="icon icon-lg icon-user visible-xs"></span><span class="hidden-xs"> Personal data</span></a></li>
+                    <li role="presentation"><a class="btn-tabs v-middle" href="#authors-proffdata" aria-controls="home"
+                                               role="tab" data-toggle="tab"><span class="icon icon-lg icon-professional-data visible-xs"></span><span class="hidden-xs"> Professional data</span></a></li>
+                    <li role="presentation"><a class="btn-tabs v-middle" href="#authors-contdata"
+                                               aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-lg icon-phone-email visible-xs"></span><span class="hidden-xs"> Contact data</span></a>
+                    </li>
+                    <li role="presentation"><a class="btn-tabs v-middle" href="#authors-paytdata"
+                                               aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-lg icon-wallet visible-xs"></span><span class="hidden-xs"> Payment details</span></a>
+                    </li>
+                    <li role="presentation"><a class="btn-tabs v-middle" href="#authors-logindata"
+                                               aria-controls="profile" role="tab" data-toggle="tab"><span class="icon icon-lg icon-login-data visible-xs"></span><span class="hidden-xs"> Login in data</span></a>
+                    </li>
+                </ul>
+                <!-- nav tabs -->
+
+                <!-- .tab-content -->
+                <div class="tab-content">
+                    <!-- Tab panes -->
+                    <div role="tabpanel" class="tab-pane fade in active" id="authors-test">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-6">
+
+                                <div class="authors-topic">
+                                    <div class="topic-header">
+                                        <h2 class="sub-title text-uppercase">Test topic: <span
+                                                class="text-light fw-300 text-lowercase">8 Things Business Users Should Know About the New</span>
+                                        </h2>
+                                    </div>
+                                    <div class="topic-language">
+                                        <p class="text-darken">Language:</p>
+                                        <h3 class="sub-title fw-300">English</h3>
+                                    </div>
+                                    <div class="topic-body fw-300 text-light">
+                                        <p>It is that time of year again, when the Internet is abuzz with speculations
+                                            about what Apple (NASDAQ:AAPL) will add to its latest iPhone. As Sept. 7
+                                            fast approaches, everyone seems to have an opinion on the matter regarding
+                                            what new features should be in the iPhone 7 (assuming that’s what the new
+                                            device will be called).</p>
+                                        <p>For business users, the iPhone represents a very powerful tool that brings
+                                            together voice communication and online access, as well as access to
+                                            applications, payment systems and, of course, entertainment (because you
+                                            can’t work all the time.) So every new iteration of the phone is highly
+                                            anticipated by this segment because it will mean yet another tool they can
+                                            use to improve their level of efficiency and productivity.</p>
+                                        <p>At this point, it is all speculation as to what will be in the iPhone 7, so
+                                            with that in mind here are eight plus things business users should know
+                                            about the new phone, assuming all the rumors. leaks and speculation out
+                                            there turn out to be true.</p>
+                                        <p>RAM The standard RAM in flagship phones is now more than 3GBs, with many
+                                            providing 4 and even 6GBs. For some reason, Apple has been behind on this
+                                            front, but the new phone could have 3GBs or more.</p>
+                                    </div>
+                                    <div class="topic-footer">
+                                        <p class="text-darken">Editor’s comment:</p>
+                                        <p class="topic-comments">
+                                            So it is finally out then. I am not really liking the minor improvements.
+                                            It has been a long time since I have seen something really new.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="authors-persondata">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2 class="sub-title text-uppercase">Personal data</h2>
+                                <div class="data-avatar">
+                                    <img src="http://lorempixel.com/80/80/people" alt="avatar-title" class="img-circle">
+                                </div>
+                                <ul class="data-list list-unstyled">
+                                    <li class="data-list-item"><span>First name: </span><span class="text-light">Dean</span></li>
+                                    <li class="data-list-item"><span>Last name: </span><span class="text-light">Winchester</span></li>
+                                    <li class="data-list-item"><span>Date of birth: </span><span class="text-light">22.04.1990</span></li>
+                                    <li class="data-list-item"><span>Country of birth: </span><span class="text-light">Scotland</span></li>
+                                    <li class="data-list-item"><span>Gender: </span><span class="text-light">Male</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="authors-proffdata">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                    <h2 class="sub-title text-uppercase">Professional data</h2>
+                                    <ul class="data-list list-unstyled">
+                                        <li class="data-list-item"><span>Language: </span><span class="text-light">English, Serbian</span></li>
+                                        <li class="data-list-item"><span>Highest educational level: </span><span class="text-light">Master</span></li>
+                                        <li class="data-list-item"><span>Specialization: </span><span class="text-light">Linguistics</span></li>
+                                        <li class="data-list-item"><span>Speciality/Experience: </span><span class="text-light">Linguistics</span></li>
+                                        <li class="data-list-item"><span>Average price per word (in euro): </span><span class="text-light">0,65 <span class="currency">€</span></span></li>
+                                        <li class="data-list-item"><span>CV: </span><span class="text-light">Dean_Winchester_CV.pdf</span></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="authors-contdata">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2 class="sub-title text-uppercase">Contact data</h2>
+                                <ul class="data-list list-unstyled">
+                                    <li class="data-list-item"><span>Email: </span><span class="text-light">deanwinchester@gmail.com</span></li>
+                                    <li class="data-list-item"><span>Phone Number: </span><span class="text-light">+44 20 8347 8111</span></li>
+                                    <li class="data-list-item"><span>Skype: </span><span class="text-light">deanwinchester</span></li>
+                                    <li class="data-list-item"><span>Address: </span><span class="text-light">927 St Patricks Road</span></li>
+                                    <li class="data-list-item"><span>Postcode: </span><span class="text-light">G69</span></li>
+                                    <li class="data-list-item"><span>City: </span><span class="text-light">Glasgow</span></li>
+                                    <li class="data-list-item"><span>Country: </span><span class="text-light">Scotland</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div role="tabpanel" class="tab-pane fade" id="authors-paytdata">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2 class="sub-title text-uppercase">Contact data</h2>
+                                <ul class="data-list list-unstyled">
+                                    <li class="data-list-item data-list-title">Invoicing address</li>
+                                    <li class="data-list-item"><span>Address: </span><span class="text-light">927 St Patricks Road</span></li>
+                                    <li class="data-list-item"><span>Postcode: </span><span class="text-light">G69</span></li>
+                                    <li class="data-list-item"><span>Email: </span><span class="text-light">deanwinchester@gmail.com</span></li>
+                                    <li class="data-list-item"><span>Phone Number: </span><span class="text-light">+44 20 8347 8111</span></li>
+                                    <li class="data-list-item"><span>Skype: </span><span class="text-light">deanwinchester</span></li>
+                                </ul>
+
+                                <ul class="data-list list-unstyled">
+                                    <li class="data-list-item data-list-title">Payment method (Bank transfer)</li>
+                                    <li class="data-list-item"><span>Bank holder name: </span><span class="text-light">Dean Winchester</span></li>
+                                    <li class="data-list-item"><span>IBAN: </span><span class="text-light">IE64BOFI90583812345678</span></li>
+                                    <li class="data-list-item"><span>BIC: </span><span class="text-light">BOFIIE2D</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="authors-logindata">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <h2 class="sub-title text-uppercase">Log in data</h2>
+                                <ul class="login-data-list list-unstyled">
+                                    <li class="login-data-list-item"><span>Current email: </span><span
+                                            class="text-light">richardborn@gmail.com</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.tab-content -->
+
+
+        <!-- summary panel-->
+        <div class="summary-templates summary-bg summary-fixed">
+            <div class="summary-active">
+                <div class="summary-body">
+                    <div class="col-xs-12">
+                        <h2 class="text-uppercase">Summary</h2>
+                        <ul class="body-item item-card list-unstyled">
+                            <li class="body-item-list">Style: <span class="rate-good">5/10</span></li>
+                            <li class="body-item-list">Grammar: <span class="rate-good">4/10</span></li>
+                            <li class="body-item-list">Briefing respect: <span class="rate-success">9/10</span></li>
+                            <li class="body-item-list">Information: <span class="text-light"><span class="rate-good">7/10</span></span>
+                            </li>
+                            <li class="body-item-list">Interest: <span class="text-light"><span class="rate-success">10/10</span></span>
+                            </li>
+                            <li class="body-item-list">Tone: <span class="text-light"><span
+                                    class="rate-good">6/10</span></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <hr class="dark-blue">
+                    <div class="col-xs-12">
+                        <div class="body-item item-total">
+                            <div class="body-item-list">Total: <span class="rate-good">6,8</span></div>
+                            <div class="body-item-list">Status:<span class="text-success-dark"> Passed</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /summary panel-->
+
+        <div class="modal fade" id="deactivateEditors" tabindex="-1" role="dialog" aria-labelledby="deactivateEditors">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"></div>
+                    <div class="modal-body">
+                        <div class="confirm-box text-center">
+                            <span class="icon icon-xxl icon-red icon-warning"></span>
+                            <h2 class="confirm-ttl">confirm deactivation</h2>
+                            <p class="confirm-sb-ttl text-light">You are trying to deactivate editor’s <span
+                                    class="text-light-blue">(Richard Born)</span> account.</p>
+                            <p class="text-light">Are you sure?</p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group-center">
+                            <button type="button" class="btn btn-135 btn-warning btn-outline" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-135 btn-warning">Deactivate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</section>
+</body>
+</html>

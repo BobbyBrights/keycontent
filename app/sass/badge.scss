@@ -1,0 +1,43 @@
+//width badge
+.badge-sm{
+    padding: 2px 5px;
+    min-width: 20px;
+}
+
+
+//styled badge
+.badge-warning{
+    background-color: $state-warning-text;
+    color: darken($state-warning-text, 50%);
+}
+.badge-danger{
+    background-color: $state-danger-text;
+}
+.badge-success-dark{
+    background-color: $state-success-dark-text;
+}
+
+//test rating ball
+.rate-null{
+  @extend .text-darken-blue;
+}
+.rate-bad{
+  @extend .text-danger;
+}
+.rate-good{
+  @extend .text-warning-dark;
+}
+.rate-success{
+  @extend .text-success-dark;
+}
+
+//fix table row with flags
+.tablesaw-cell-content {
+  .flag-sm{
+    vertical-align: middle;
+    margin-right: 3px;
+    &:last-child{
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,215 @@
+// customize btn
+.btn-order {
+  float: left;
+  width: 100%;
+  .btn {
+    min-width: 210px;
+    margin-bottom: 20px;
+    &:last-child {
+      margin: 0;
+    }
+    &.btn-mini {
+      min-width: 170px;
+      margin-right: 8px;
+    }
+    @media screen and (min-width: $screen-xs-max) and (max-width: 1440px) {
+      margin-right: 15px;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+
+  }
+}
+
+//btn-inline
+.btn-inline {
+  > button, .btn {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      margin-right: 0;
+    }
+  }
+}
+
+//btn-select
+.bootstrap-select > .btn {
+  line-height: normal;
+  min-height: 38px;
+}
+
+//btn-width
+.btn-135 {
+  min-width: 135px;
+}
+
+.btn-210 {
+  min-width: 210px;
+  @media (max-width: $screen-xs-max) {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.btn-280 {
+  min-width: 280px;
+  @media (max-width: $screen-xs-max) {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.btn-230 {
+  min-width: 230px;
+  @media (max-width: $screen-xs-max) {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.btn-static-block {
+  width: 305px;
+}
+
+.btn-delete {
+  padding: 5px 10px;
+  font-size: 12px;
+  top: 2px;
+  color: $state-danger-text;
+  &:hover,
+  &:focus {
+    color: lighten($state-danger-text, 5%);
+  }
+}
+
+//btn with icon
+button, .btn {
+  > .icon {
+    position: relative;
+    top: 2px;
+  }
+}
+
+.btn-icon {
+  padding: 0 5px;
+  border: none;
+  & .icon {
+    font-size: 38px;
+  }
+}
+
+.btn-outline {
+  border-color: $btn-outline-border;
+  &:focus,
+  &.focus {
+    border-color: lighten($btn-outline-border, 10%);
+  }
+  &:hover {
+    border-color: lighten($btn-outline-border, 10%)
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    &:hover,
+    &:focus,
+    &.focus {
+      border-color: lighten($btn-outline-border, 10%)
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    border-color: lighten($btn-outline-border, 10%)
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      border-color: lighten($btn-outline-border, 10%)
+    }
+  }
+}
+
+.btn-radio-group {
+  width: 100%;
+
+  .btn-radio {
+    min-width: 130px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.75;
+    &.btn-radio-block {
+      min-width: 50%;
+    }
+    @media (max-width: $screen-xs-max) {
+      width: 50%;
+    }
+  }
+}
+
+.btn-blue {
+  //border-color: $btn-blue-border;
+  font-size: 16px;
+  border: none;
+  &:focus,
+  &.focus {
+    background-color: lighten($btn-blue-bg, 5%);
+
+  }
+  &:hover {
+    background-color: lighten($btn-blue-bg, 5%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    &:hover,
+    &:focus,
+    &.focus {
+      //background-color: lighten($btn-blue-bg, 5%);
+      background-color: #6ab2db;
+      color: #324758;
+      //border-color: lighten($btn-blue-border, 10%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-color: #6ab2db;
+    color: #324758;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      //border-color: lighten($btn-blue-border, 10%)
+      background-color: darken($btn-blue-bg, 15%);
+      //background-color: $btn-blue-bg;
+    }
+  }
+}
+
+.btn-group-center {
+  display: table;
+  margin: 0 auto;
+  &.btn-inline {
+     button + button, .btn + .btn {
+      @media screen and (max-width: $screen-xs-max) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.btn-inline-fluid {
+  > button, .btn {
+    width: calc(50% - 10px);
+  }
+}

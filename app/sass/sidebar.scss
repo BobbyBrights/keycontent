@@ -1,0 +1,348 @@
+$sidebar-bg: #6ab2db;
+$sidebar-font-color: #f7fcfe;
+$sidebar-width: 300px;
+$main-private-bg: #324758;
+$sidebar-title-color: #1b5c81;
+$promo-item-color: #6ab2db;
+$promo-item-size: 30px;
+$nav-check-color: #1b5c81;
+$nav-summary-bg: #61a7d3;
+$nav-summary-color: #abe1fa;
+$nav-summary-tx-warning: #ffeda9;
+//service class
+.margin-bot-20 {
+    margin-bottom: 20px;
+}
+
+.v-mdl {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sidebar {
+    background-color: $sidebar-bg;
+    color: $sidebar-font-color;
+    width: $sidebar-width;
+    min-width: $sidebar-width;
+    height: $global-height;
+    min-height: $global-height;
+    padding: 30px;
+    float: left;
+    display: table;
+    position: fixed;
+    transition: all ease 0.3s;
+    z-index: 2;
+    &.sidebar-dashboard {
+        padding: 0;
+        @media (max-width: 1024px) {
+            margin-left: -300px;
+            &.open {
+                margin: 0;
+                transform: translateX(0);
+                //min-height: 3000px;
+            }
+        }
+        & .sidebar-logo {
+            position: relative;
+            top: 0;
+        }
+        & .sidebar-admin {
+            padding: 30px 30px 42px;
+        }
+    }
+
+    .sidebar-logo {
+        position: absolute;
+        top: 30px;
+        width: 90px;
+    }
+    .sidebar-login {
+        height: $global-height;
+        min-height: $global-height;
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .notify-user {
+        position: absolute;
+        right: 35px;
+        top: 40px;
+        & .notify-wrappper {
+            position: relative;
+            & .badge {
+                position: absolute;
+                top: -20px;
+                right: -10px;
+            }
+        }
+    }
+    &.sidebar-mobile {
+        @media (max-width: $screen-xs-max) {
+            width: 100%;
+            display: block;
+            & .sidebar-login {
+                max-width: 90%;
+                margin: 0 auto;
+                display: block;
+            }
+            & .sidebar-logo,
+            .sidebar-cprt {
+                position: relative;
+                top: 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+            & .sidebar-main {
+                padding: 40px 0;
+            }
+        }
+    }
+    .sidebar-menu {
+        padding: 30px 0 0;
+        @media (max-width: $screen-md-max){
+            padding: 0;
+        }
+    }
+    .user-profile {
+        font-size: 16px;
+        display: table;
+        width: 100%;
+        padding-bottom: 20px;
+        & .icon {
+            vertical-align: middle;
+        }
+        & .status-tx {
+            font-size: 14px;
+            color: $sidebar-title-color;
+        }
+        & .profile-logout {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+        }
+    }
+    .sidebar-title {
+        margin-bottom: 30px;
+        line-height: 1.2;
+        color: $sidebar-title-color;
+    }
+    .sub-title-tx {
+        font-size: 14px;
+        line-height: 20px;
+        color: $sidebar-title-color;
+    }
+    .checkbox {
+        font-size: 16px;
+        color: $nav-check-color;
+    }
+    hr {
+        border-top: 3px solid #5da9dd;
+        margin: 60px auto;
+    }
+    .login-title {
+        font-size: 30px;
+        line-height: 1;
+    }
+    .sub-title {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .sidebar-link {
+        font-size: 16px;
+    }
+    .sidebar-cprt {
+        color: #8bc9ec;
+        position: fixed;
+        bottom: 30px;
+        z-index: 1;
+        width: 300px;
+        margin: 0 -30px;
+        padding: 0 30px;
+        @media (max-width: $screen-sm-max) {}
+    }
+    .sidebar-summary {
+        .sidebar-cprt {
+            position: relative;
+            padding: 30px 0 0 0;
+            margin: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+    .checkbox {
+        margin-top: 20px;
+    }
+}
+
+.form-group-wrapper {
+  margin-bottom: 30px;
+}
+
+.main-login {
+    //display: table;
+    width: 100%;
+    height: $global-height;
+    min-height: $global-height;
+    &.main-dashboard {
+        min-width: 320px;
+        @media (max-width: 1024px) {
+            padding-top: 50px;
+            & .main-private {
+                margin-left: 0px;
+            }
+        }
+    }
+    & .main-private {
+        margin-left: 300px;
+    }
+}
+
+.tbl-center {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+.main-private {
+    background-color: $main-private-bg;
+    height: $global-height;
+    min-height: $global-height;
+    margin-left: 300px;
+    &.sidebar-right {
+        @media (min-width: $screen-sm-max) {
+            display: block;
+            margin-right: 340px;
+        }
+        &.tablet-push {
+            @media (max-width: $screen-sm-min) {
+                width: 100%;
+                height: auto;
+                min-height: auto;
+            }
+            @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max) {
+              &.panel-fixed{
+                .summary-fixed {
+                  min-height: auto;
+                  padding: 20px 15px;
+                  position: fixed;
+                  bottom: 0;
+                }
+                .summary-templates.summary-bg .summary-body{
+                  margin: 0;
+                }
+              }
+                 .summary-fixed {
+                    width: 100%;
+                   float: left;
+                    height: auto;
+                    min-height: 430px;
+                    position: relative;
+                    padding-top: 0;
+                    & .create-template {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $screen-sm-max) {
+        margin-left: 0;
+        &.canvas-left {
+            margin-left: 0;
+            position: fixed;
+            transform: translateX(310px);
+            transition: all ease 0.3s;
+        }
+    }
+}
+
+// icon sidebar 
+.icon-sidebar {
+    color: $sidebar-title-color;
+    font-size: 18px;
+}
+
+.sub-info-tx {
+    color: $sidebar-title-color;
+    & .icon {
+        font-size: 24px;
+    }
+    & .info-tx {
+        padding-left: 5px;
+        font-weight: 300;
+    }
+}
+
+.promo-container {
+    display: table;
+    width: 100%;
+    min-height: $global-height;
+    & .promo {
+        color: $promo-item-color;
+        line-height: 1;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        & .promo-item {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 2%;
+            padding: 2% 0;
+            /*@media (max-width: $screen-sm-max) {
+              padding: 2% 0;  
+            }*/
+            & .item-title {
+                font-size: $promo-item-size;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 2px;
+                text-align: left;
+            }
+            & .item-subtitle {
+                font-size: 24px;
+                @media (max-width: $screen-sm-max) {
+                    font-size: 1.2em;
+                }
+            }
+        }
+        & .item-sale {
+            font-size: 66px;
+            text-transform: uppercase;
+            font-weight: 300;
+            @media (max-width: $screen-sm-max) {
+                font-size: 55px;
+            }
+            @media (max-width: $screen-md-max) {}
+        }
+    }
+}
+
+//sidebar custom button
+//media sidebar
+
+//
+.panel-tablet-view{
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: portrait) {
+    display: table;
+    width: 100%;
+    &-item{
+      display: table-cell;
+      vertical-align: middle;
+      &:last-child{
+        @extend .text-right;
+      }
+      &.form-group-box{
+        display: table-cell;
+      }
+    }
+  }
+}
+
+.average{
+  @media (max-width: $screen-sm-max) {
+    @extend .form-center;
+    //[class^="col-"], [class*=" col-"]{
+    //  padding: 0;
+    //}
+    text-align: center;
+  }
+}

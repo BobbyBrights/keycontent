@@ -1,0 +1,51 @@
+$sign-in-form-label-color: #1b5c81;
+
+
+.just-steps{
+  label, .icon-dark-blue{
+    color: $sign-in-form-label-color;
+  }
+}
+
+.check-list-step-item{
+  a{
+    display: block;
+  }
+}
+
+
+.invoicing-adress, .payment-method{
+  @extend .tbl;
+}
+.terms-form{
+  max-width: 670px;
+  display: table;
+  @media (max-width: $screen-sm-max) {
+    max-width: 90%;
+  }
+  width: 100%;
+  margin: 0 auto;
+}
+.success-form{
+  max-width: 840px;
+  @media (max-width: $screen-sm-max) {
+    max-width: 90%;
+  }
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-box{
+  display: table;
+  width: 100%;
+  //height: calc(100% - 190px);
+  @media (min-width: $screen-xs-max){
+    height: calc(100% - 95px);
+    padding-top: 95px;
+  }
+  &-middle{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

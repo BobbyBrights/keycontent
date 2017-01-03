@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Cross Finance</title>
+    <!-- Template -->
+    <link rel="stylesheet" href="/dist/css/main.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/dist/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/dist/css/tablesaw.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type='text/css' href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="/dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/dist/js/moment.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw.js"></script>
+    <script type="text/javascript" src="/dist/js/tablesaw-init.js"></script>
+    <script type="text/javascript" src="/dist/js/custom.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section class="main-login main-dashboard">
+        <!-- mobile/tablet-nabvar -->
+        <nav class="navbar navbar-default navbar-fixed-top hidden-lg">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="toggle-mnu"><span></span></a>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Cross Finance" src="/dist/img/logo-sidebar.svg">
+                    </a>
+                    <!-- notify-mobile -->
+                    <div class="notify-user notify-navbar">
+                        <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                        <a class="notify-link" href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                        </span>
+                    </div>
+                    <!-- /notify-mobile -->
+                </div>
+            </div>
+        </nav>
+        <!-- mobile/tablet-nabvar -->
+        <aside class="sidebar sidebar-dashboard">
+            <div class="sidebar-admin">
+                <div class="sidebar-logo visible-lg">
+                    <a href="/" title="Cross Finance">
+                        <img src="/dist/img/logo-sidebar.svg" alt="Cross Finance">
+                    </a>
+                </div>
+                <!-- notify-desctop -->
+                <div class="notify-user visible-lg">
+                    <span class="notify-wrappper">
+                        <span class="icon icon-lg icon-blue icon-notify"></span>
+                    <a href="#"><span class="badge badge-sm badge-warning">10</span></a>
+                    </span>
+                </div>
+                <!-- notify-desctop -->
+                <div class="sidebar-menu">
+                    <div class="user-profile">
+                        <div class="user-name">William Jefferson</div>
+                        <div class="user-status">
+                            <span class="icon icon-blue icon-warning"></span>
+                            <span class="status-tx">Not verified yet</span>
+                        </div>
+                        <div class="profile-logout">
+                            <a href="#logout"><span class="icon icon-lg icon-blue icon-logout"></span></a></div>
+                    </div>
+                    <nav class="nav-hover">
+                        <ul class="nav-list list-unstyled">
+                            <li class="nav-list-item">
+                                <a href="" class="nav-list-link">
+                                    <span class="icon icon-lg icon-refresh"></span><span class="link-tx">Payments and transfers</span></a>
+                            </li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-wallet"></span>
+                           <span class="link-tx"> Add funds</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-mastercard"></span> <span class="link-tx"> Cards & accounts</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-reports"></span> <span class="link-tx"> Reports </span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-tool"></span><span class="link-tx">Settings</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-paper"></span><span class="link-tx"> Fees</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link link-active"><span class="icon icon-lg icon-heart"></span><span class="link-tx"> Loyalty programm</span></a></li>
+                            <li class="nav-list-item"><a href="" class="nav-list-link"><span class="icon icon-lg icon-info-question"></span><span class="link-tx"> Help & support</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar-summary-->
+            <div class="sidebar-summary">
+                <div class="collapse-list">
+                    <span class="collapse-title title-summary collapse in" role="button" data-toggle="collapse" href="#collapseSummary" aria-expanded="true" aria-controls="collapseExample">Summary <span class="icon icon-xs icon-arrow-down pull-right"></span></span>
+
+                    <div class="collapse in" id="collapseSummary" aria-expanded="true">
+                        <!--               wallet-block-->
+                        <div class="wallet">
+                            <div class="wallet-header">
+                                <span class="wallet-title">Cf-Wallet</span>
+                                <span class="walet-number pull-right">#000-150886</span>
+                            </div>
+                            <div class="wallet-body">
+                                <div class="wallet-list">
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">EUR</span>
+                                        <span class="pull-right">                         
+                                            <span class="wallet-summ">150 886,81</span>
+                                        <span class="icon icon-sm  icon-eur"></span>
+                                        </span>
+                                    </div>
+                                    <div class="wallet-list-item">
+                                        <span class="wallet-currency">USD</span>
+                                        <span class="pull-right">                         
+                                             <span class="wallet-summ">235 546,12</span>
+                                        <span class="icon icon-sm icon-usd"></span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--               /wallet-block-->
+                        <hr>
+                        <!--               limits-block-->
+                        <div class="limits">
+                            <div class="limits-header">
+                                <span class="limits-title">Limits</span>
+                            </div>
+                            <div class="limits-body">
+                                <div class="limits-admission">
+                                    <span class="admission-available text-success">1500,00</span><span class="admiss-all">/5 000,00</span></span>
+                                    <span class="icon icon-sm icon-eur pull-right"></span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span class="sr-only">40% Complete (success)</span>
+                                    </div>
+                                </div>
+                                <div class="limits-incoming">
+                                    <span>Incoming</span>
+                                    <span class="pull-right">for 365 days</span>
+                                </div>
+                            </div>
+                            <!--               /collapse-->
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-cprt">
+                    © Cross.finance LLC, 2016.
+                    <br> All Rights Reserved.
+                </div>
+            </div>
+            <!-- /sidebar-summary-->
+
+        </aside>
+        <main class="main-private sidebar-right">
+            <div class="promo-container hide">
+                <div class="promo">
+                    <div class="promo-item item-logo"><img src="/dist/img/logo-main.svg" alt=""></div>
+                    <div class="promo-item item-way">
+                        <div class="item-title">Cross Finance</div>
+                        <div class="item-subtitle">A simple way to money transfers</div>
+                    </div>
+                    <div class="promo-item item-sale">Only <strong>5%</strong> Free</div>
+                </div>
+
+            </div>
+
+            <div class="dashboard-container">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h1 class="top-title">Order of CF prepaid card</h1>
+
+                            <div class="summary-main">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 col-push">
+                                        <div class="card">
+                                            <!-- card-form -->
+                                            <div class="card-select">
+                                                <h2 class="card-title text-uppercase">Card</h2>
+                                                <h3 class="card-sub-title fw-300">Select a currency of your card</h3>
+                                                <div class="card-radio btn-radio-group btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-blue btn-radio active">
+                                                        <input type="radio" name="options" id="optionEuro" autocomplete="off" checked> EUR
+                                                    </label>
+                                                    <label class="btn btn-blue btn-radio">
+                                                        <input type="radio" name="options" id="optionUsd" autocomplete="off"> USD
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="access-code">
+                                                <fieldset>
+                                                    <!--if you can disable all form,  add disabled to fieldset -->
+                                                    <form>
+
+                                                        <!-- card-form -->
+                                                        <h3 class="code-sub-title fw-300">Enter an access code <span class="icon icon-lg icon-yellow icon-info-question"></span></h3>
+                                                        <div class="form-row">
+                                                            <div class="form-group form-code">
+                                                                <input type="text" class="form-control form-dark-blue" id="exampleInputPassword1" placeholder="Code">
+                                                            </div>
+                                                            <div class="form-group form-code">
+                                                                <input type="text" class="form-control form-dark-blue" id="exampleInputPassword2" placeholder="Code">
+                                                            </div>
+                                                            <div class="form-group form-code">
+                                                                <input type="text" class="form-control form-dark-blue" id="exampleInputPassword3" placeholder="Code">
+                                                            </div>
+                                                            <div class="form-group form-code">
+                                                                <input type="text" class="form-control form-dark-blue" id="exampleInputPassword4" placeholder="Code">
+                                                            </div>
+                                                            <div class="form-group form-code">
+                                                                <input type="text" class="form-control form-dark-blue" id="exampleInputPassword5" placeholder="Code">
+                                                            </div>
+                                                            <div class="form-group form-code">
+                                                                <input type="text" class="form-control form-dark-blue" id="exampleInputPassword5" placeholder="Code">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <!-- /card-form -->
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <!-- /card -->
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-push">
+                                        <fieldset>
+                                            <form>
+                                                <div class="delivery-method">
+                                                    <h2 class="delivery-title text-uppercase">Delivery</h2>
+                                                    <h3 class="delivery-sub-title fw-300">Select a delivery method</h3>
+                                                    <div class="delivery-radio btn-radio-group btn-group" data-toggle="buttons">
+                                                        <label class="btn btn-blue btn-radio active">
+                                                            <input type="radio" name="options" id="optionStandart" autocomplete="off" checked> Standard
+                                                        </label>
+                                                        <label class="btn btn-blue btn-radio">
+                                                            <input type="radio" name="options" id="optionExpress" autocomplete="off"> Express
+                                                        </label>
+                                                    </div>
+                                                    <div class="delivery-info v-middle pad-15"><span class="icon icon-dark-blue icon-lg icon-info-notification"></span>
+                                                        <span class="text-darken">Standart delivery takes from 3 to 6 weeks</span></div>
+                                                </div>
+                                                <div class="delivery-adress">
+                                                    <h3 class="delivery-title fw-300">Enter a delivery address</h3>
+                                                    <div class="form-group">
+                                                        <label class="text-darken">Previously used addresses:</label>
+                                                        <select class="selectpicker" data-style="btn-blue" data-width="100%">
+                                                            <option value="">Am Gestade 1, 1010, Vienna, Austria</option>
+                                                            <option value="">Default select</option>
+                                                            <option value="">Default select</option>
+                                                            <option value="">Default select</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group form-md-6 form-xs-12">
+                                                            <label class="text-darken">State:</label>
+                                                            <select class="selectpicker" data-style="btn-blue" data-width="100%">
+                                                                <option value="">Austria</option>
+                                                                <option value="">Default select</option>
+                                                                <option value="">Default select</option>
+                                                                <option value="">Default select</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group form-md-6 form-xs-12">
+                                                            <label class="text-darken">County:</label>
+                                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter county">
+                                                        </div>
+
+
+
+
+
+
+                                                        <div class="form-group form-md-9 form-xs-12">
+                                                            <label class="text-darken">City:</label>
+                                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter city">
+                                                        </div>
+                                                        <div class="form-group form-md-3 form-xs-12">
+                                                            <label class="text-darken">Postcode:</label>
+                                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter code">
+                                                        </div>
+
+                                                        <div class="form-group form-md-12 form-xs-12">
+                                                            <label class="text-darken">Adress:</label>
+                                                            <input type="text" class="form-control form-dark-blue" placeholder="Enter Adress">
+                                                        </div>
+
+
+
+
+                                                    </div>
+                                            </form>
+                                        </fieldset>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-templates summary-bg summary-fixed">
+                <div class="summary-active">
+                    <h2 class="text-uppercase">Summary</h2>
+                    <div class="summary-body">
+                        <div class="col-xs-12">
+                            <div class="body-item item-card">
+                                <div class="body-item-list">Card currency: <span class="text-light">EUR</span></div>
+                                <div class="body-item-list">Fee for ATM withdrawal: <span class="text-light">1%</span></div>
+                                <div class="body-item-list">Access code: <span class="text-light">1-1-1-1-1-1</span></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="body-item item-method">
+                                <div class="body-item-list">Delivery method: <span class="text-light">Express</span></div>
+                                <div class="body-item-list"> Delivery address: <span class="text-light">Am Gestade 1,
+                    1010, Vienna, Austria     </span></div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr class="dark-blue ">
+                        <div class="col-xs-12">
+                            <div class="body-item item-cost">
+                                <h2 class="text-uppercase">Cost</h2>
+                                <div class="body-item-list">Card issuance: <span class="text-light">29 € </span></div>
+                                <div class="body-item-list">Express delivery: <span class="text-light">79,95 € </span></div>
+                                <div class="body-item-list">VAT: <span class="text-light">20,7 €  </span></div>
+
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <hr class="dark-blue">
+                        <div class="col-xs-12">
+                            <div class="body-item item-total">
+                                <div class="body-item-list">Total: <span class="text-light">129,65 €</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-order">
+                        <button class="btn btn-lg btn-warning">Order</button>
+                        <button class="btn btn-lg btn-outline">Cancel order</button>
+                    </div>
+                </div>
+
+
+
+
+        </main>
+    </section>
+</body>
+
+</html>
