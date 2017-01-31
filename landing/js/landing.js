@@ -61,7 +61,7 @@ $(document).ready(function () {
         nav: false,
         //margin: 30,
         responsiveRefreshRate : 200,
-        //dots: false,
+        dots: false,
         loop: true,
         responsive: {
             0:{
